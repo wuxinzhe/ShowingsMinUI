@@ -1,6 +1,6 @@
 {
-  "name": "@showings_service/showings-min-ui-list",
-  "version": "1.0.8",
+  "name": "@showings-min/sh-list",
+  "version": "1.0.9",
   "description": "列表 - 小程序组件",
   "publishConfig": {
     "access": "public"

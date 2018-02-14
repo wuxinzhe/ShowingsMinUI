@@ -1,6 +1,6 @@
 {
-  "name": "@showings_service/showings-min-ui-input",
-  "version": "1.0.5",
+  "name": "@showings-min/sh-input",
+  "version": "1.0.6",
   "description": "文本输入 - 小程序组件",
   "publishConfig": {
     "access": "public"
