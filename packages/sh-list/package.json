@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/wuxinzhe/ShowingsMinUI/tree/master/packages/sh-list"
   },
-  "author": "",
+  "author": "wuxinzhe",
   "license": "MIT",
   "minConfig": {
     "component": true
