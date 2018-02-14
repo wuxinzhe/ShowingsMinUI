@@ -1,9 +1,11 @@
 {
   "pages": [
     "pages/home/index",
+    "pages/date-picker/index",
     "pages/form/index",
     "pages/input/index",
-    "pages/list/index"
+    "pages/list/index",
+    "pages/popup/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",

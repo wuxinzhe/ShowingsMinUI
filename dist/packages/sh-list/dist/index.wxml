@@ -1,2 +1,3 @@
 <view class="sh-list">
+    <button form-type="submit" bindtap="onTap">提交</button>
 </view>

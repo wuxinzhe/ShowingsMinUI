@@ -1,10 +1,8 @@
 <template>
   <example title="sh-input" desc="文本输入">
-
-    <example-demo title="请填写示例名称" desc="请填写示例描述">
+    <example-demo title="普通文本输入" desc="文本输入基础用法">
       <demo-default></demo-default>
     </example-demo>
-
   </example>
 </template>
 

@@ -5,7 +5,7 @@
 ## Install
 
 ``` bash
-$ min install sh-popup
+$ min install @showings-min/sh-popup
 ```
 
 
@@ -15,8 +15,12 @@ $ min install sh-popup
 
 | 名称                  | 描述                         |
 |----------------------|------------------------------|
-|`prop-name`           | 描述属性的类型，默认值等         |
-|`method-name`         | 描述方法的参数，返回值等         |
+|`visible`           | Boolean: 弹出层是否可见         |
+|`title`             | String: 弹出层中间标题         |
+|`share`             | Boolean: 是否将确定按钮添加分享页面功能|
+|`onCancel`          | Function(): 取消按钮点击事件|
+|`onConfirm`         | Function(): 确定按钮点击事件|
+
 
 ## ChangeLog
 

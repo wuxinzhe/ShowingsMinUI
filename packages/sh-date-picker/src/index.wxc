@@ -1,24 +1,59 @@
 <template>
-  <view class="sh-date-picker">
-    <view>ShDatePicker Component</view>
-  </view>
+  <label wx:if="{{label!==null}}" style="{{'width:'+labelWidth}};">
+    {{label}}
+  </label>
 </template>
 
 <script>
 export default {
-  config: {
-    usingComponents: { }
-  },
-  behaviors: [ ],
-  properties: { },
-  data: { },
-  methods: { }
+    config: {
+        usingComponents: {}
+    },
+    behaviors: ['wx://form-field'],
+    properties: {
+        name: String,
+        value: String,
+        label: {
+            type: String,
+            value: null
+        }
+    },
+    data: {},
+    methods: {}
 }
 
 
 </script>
 
 <style>
-.sh-date-picker {
-}
+  sh-date-picker {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+
+  sh-date-picker:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    left: 30px;
+  }
+
+  sh-date-picker label {
+    margin-right: 25px;
+    font-size: 25px;
+    text-align: right;
+  }
 </style>

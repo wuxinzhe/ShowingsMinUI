@@ -28,6 +28,10 @@ export default {
             type: String,
             value: null
         },
+        labelWidth: {
+            type: String,
+            value: '120rpx'
+        },
         type: {
             type: String,
             value: 'text'
@@ -55,10 +59,6 @@ export default {
         focus: {
             type: Boolean,
             value: false
-        },
-        labelWidth: {
-            type: String,
-            value: '120rpx'
         }
     },
     methods: {

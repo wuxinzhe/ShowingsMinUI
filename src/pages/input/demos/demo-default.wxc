@@ -2,7 +2,8 @@
   <sh-form formTitle="Showings-Input">
     <form bindsubmit="onSubmit">
       <sh-input label="用户名" placeholder="请输入用户名" name="username"></sh-input>
-      <sh-input label="密码" placeholder="请输入6位密码.." password="true" name="password"></sh-input>
+      <sh-input label="密码" placeholder="请输入6位密码.." password="true" name="password">
+      </sh-input>
     </form>
   </sh-form>
 </template>
@@ -11,7 +12,7 @@
 export default {
     config: {
         usingComponents: {
-            'sh-input': '@showings-min/sh-input',
+            'sh-input': 'sh-input',
             'sh-form': 'sh-form'
         }
     },

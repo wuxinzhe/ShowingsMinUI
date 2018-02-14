@@ -1,23 +1,28 @@
 <template>
   <view class="sh-list">
+    <button form-type="submit" bindtap="onTap">提交</button>
   </view>
 </template>
 
 <script>
 export default {
-  config: {
-    usingComponents: { }
-  },
-  behaviors: [ ],
-  properties: { },
-  data: { },
-  methods: { }
+    config: {
+        usingComponents: {}
+    },
+    behaviors: ['wx://form-field'],
+    properties: {},
+    data: {},
+    methods: {
+        onTap (e) {
+            console.log(e)
+        }
+    }
 }
 
 
 </script>
 
 <style>
-.sh-list {
-}
+  .sh-list {
+  }
 </style>
