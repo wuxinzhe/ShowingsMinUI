@@ -5,7 +5,7 @@
 ## Install
 
 ``` bash
-$ min install @showings_service/showings-min-ui-form
+$ min install @showings-min/sh-form
 ```
 
 

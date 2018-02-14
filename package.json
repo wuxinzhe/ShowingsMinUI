@@ -1,10 +1,13 @@
 {
-  "name": "@showings_service/showings-min-ui ",
+  "name": "@showings-min/showings-ui",
   "description": "ShowingsMinUI-组件库",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/wuxinzhe/ShowingsMinUI.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "author": "wuxinzhe",
   "license": "MIT",
@@ -12,7 +15,8 @@
     "@minui/wxc-example": "^1.0.0",
     "@minui/wxc-example-demo": "^1.0.0",
     "@minui/wxc-example-md": "^1.0.0",
-    "@minui/wxc-example-menu": "^1.0.0"
+    "@minui/wxc-example-menu": "^1.0.0",
+    "@showings_service/showings-min-ui-input": "^1.0.5"
   },
   "devDependencies": {
     "babel-plugin-syntax-export-extensions": "^6.13.0",

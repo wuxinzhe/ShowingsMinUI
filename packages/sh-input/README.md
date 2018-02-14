@@ -5,7 +5,7 @@
 ## Install
 
 ``` bash
-$ min install @showings_service/showings-min-ui-input
+$ min install @showings-min/sh-input
 ```
 
 
