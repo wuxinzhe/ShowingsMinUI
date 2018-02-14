@@ -1,12 +1,12 @@
 {
-  "name": "sh-list",
-  "version": "1.0.0",
+  "name": "@showings_service/showings-min-ui/sh-list",
+  "version": "1.0.2",
   "description": "列表 - 小程序组件",
   "main": "dist/index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/meili/minui/tree/master/packages/sh-list"
+    "url": "https://github.com/wuxinzhe/ShowingsMinUI/tree/master/packages/sh-list"
   },
   "author": "",
   "license": "MIT",
