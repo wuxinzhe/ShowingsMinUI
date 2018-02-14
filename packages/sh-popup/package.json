@@ -1,6 +1,6 @@
 {
   "name": "@showings-min/sh-popup",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "弹出层 - 小程序组件",
   "publishConfig": {
     "access": "public"
