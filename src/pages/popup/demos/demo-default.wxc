@@ -1,0 +1,27 @@
+<template>
+  <button bindtap="onShow">Show Popup</button>
+  <sh-popup title="Showings-Popup" visible="{{visible}}"></sh-popup>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {
+            'sh-popup': 'sh-popup'
+        }
+    },
+    data: {
+        visible: false
+    },
+    methods: {
+        onShow () {
+            this.setData({
+                visible: true
+            })
+        }
+    }
+}
+</script>
+
+<style>
+</style>

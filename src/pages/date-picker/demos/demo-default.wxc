@@ -1,0 +1,18 @@
+<template>
+  <sh-date-picker></sh-date-picker>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      'sh-date-picker': 'sh-date-picker'
+    }
+  },
+  data: { },
+  methods: { }
+}
+</script>
+
+<style>
+</style>

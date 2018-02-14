@@ -1,7 +1,7 @@
 {
-  "name": "@showings-min/sh-list",
-  "version": "1.0.11",
-  "description": "列表 - 小程序组件",
+  "name": "@showings-min/sh-date-picker",
+  "version": "1.0.1",
+  "description": "日期选择器 - 小程序组件",
   "publishConfig": {
     "access": "public"
   },
@@ -9,7 +9,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/wuxinzhe/ShowingsMinUI/tree/master/packages/sh-list"
+    "url": "https://github.com/wuxinzhe/ShowingsMinUI/tree/master/packages/sh-date-picker"
   },
   "author": "",
   "license": "MIT",
