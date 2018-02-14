@@ -16,7 +16,7 @@
     "@minui/wxc-example-demo": "^1.0.0",
     "@minui/wxc-example-md": "^1.0.0",
     "@minui/wxc-example-menu": "^1.0.0",
-    "@showings_service/showings-min-ui-input": "^1.0.5"
+    "@showings-min/sh-input": "^1.0.7"
   },
   "devDependencies": {
     "babel-plugin-syntax-export-extensions": "^6.13.0",
