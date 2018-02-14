@@ -1,0 +1,24 @@
+<template>
+  <view class="sh-input">
+    <view>ShInput Component</view>
+  </view>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: { }
+  },
+  behaviors: [ ],
+  properties: { },
+  data: { },
+  methods: { }
+}
+
+
+</script>
+
+<style>
+.sh-input {
+}
+</style>

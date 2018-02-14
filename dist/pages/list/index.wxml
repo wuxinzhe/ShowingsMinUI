@@ -1,4 +1,3 @@
-<!-- wxp template -->
 <example title="sh-list" desc="列表" _pid="{{_pid}}">
 
     <example-demo title="请填写示例名称" desc="请填写示例描述" _pid="{{_pid}}" source="{{__code__.demoDefault}}">
