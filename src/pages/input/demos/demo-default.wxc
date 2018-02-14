@@ -1,0 +1,29 @@
+<template>
+  <sh-form formTitle="Showings-Input">
+    <form bindsubmit="onSubmit">
+      <sh-input label="用户名" placeholder="请输入用户名" name="username"></sh-input>
+      <sh-input label="密码" placeholder="请输入6位密码.." password="true" name="password"></sh-input>
+      <button form-type="submit">提交</button>
+    </form>
+  </sh-form>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      'sh-input': 'sh-input',
+      'sh-form': 'sh-form'
+    }
+  },
+  data: {},
+  methods: {
+    onSubmit(e){
+      console.log(e)
+    }
+  }
+}
+</script>
+
+<style>
+</style>

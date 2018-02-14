@@ -1,7 +1,7 @@
 {
-  "name": "@showings_service/showings-min-ui-list",
-  "version": "1.0.7",
-  "description": "列表 - 小程序组件",
+  "name": "@showings_service/showings-min-ui-form",
+  "version": "1.0.0",
+  "description": "表单 - 小程序组件",
   "publishConfig": {
     "access": "public"
   },
@@ -9,7 +9,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/wuxinzhe/ShowingsMinUI/tree/master/packages/sh-list"
+    "url": "https://github.com/wuxinzhe/ShowingsMinUI/tree/master/packages/sh-form"
   },
   "author": "",
   "license": "MIT",

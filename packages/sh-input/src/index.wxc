@@ -1,24 +1,119 @@
 <template>
-  <view class="sh-input">
-    <view>ShInput Component</view>
-  </view>
+  <label wx:if="{{label!==null}}" style="{{'width:'+labelWidth}};">
+    {{label}}
+  </label>
+  <input password="{{password}}"
+         placeholder="{{placeholder}}"
+         disabled="{{disabled}}"
+         maxlength="{{max}}"
+         focus="{{focus}}"
+         auto-focus="{{autoFocus}}"
+         name="{{name}}"
+         value="{{value}}"
+         placeholder-class="placeholder"
+         class="input-field" bindinput="onInput"/>
+  <slot/>
 </template>
 
 <script>
 export default {
-  config: {
-    usingComponents: { }
-  },
-  behaviors: [ ],
-  properties: { },
-  data: { },
-  methods: { }
+    config: {
+        usingComponents: {}
+    },
+    behaviors: ['wx://form-field'],
+    properties: {
+        name: String,
+        value: String,
+        label: {
+            type: String,
+            value: null
+        },
+        type: {
+            type: String,
+            value: 'text'
+        },
+        password: {
+            type: Boolean,
+            value: false
+        },
+        disabled: {
+            type: Boolean,
+            value: false
+        },
+        placeholder: {
+            type: String,
+            value: '请输入..'
+        },
+        max: {
+            type: Number,
+            value: 140
+        },
+        autoFocus: {
+            type: Boolean,
+            value: false
+        },
+        focus: {
+            type: Boolean,
+            value: false
+        },
+        labelWidth: {
+            type: String,
+            value: '120rpx'
+        }
+    },
+    methods: {
+        onInput ({detail}) {
+            const {value} = detail
+            this.setData({
+                value: value
+            })
+        }
+    }
 }
 
 
 </script>
 
 <style>
-.sh-input {
-}
+  sh-input {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+
+  sh-input:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    left: 30px;
+  }
+
+  sh-input label {
+    margin-right: 25px;
+    font-size: 25px;
+    text-align: right;
+  }
+
+  .input-field {
+    flex-grow: 1;
+    font-size: 25px;
+  }
+
+  .placeholder {
+    font-size: 25px;
+    color: #C0C4CC;
+  }
+
 </style>

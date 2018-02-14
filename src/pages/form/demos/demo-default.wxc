@@ -1,23 +1,18 @@
 <template>
-  <view class="sh-list">
-  </view>
+  <sh-form></sh-form>
 </template>
 
 <script>
 export default {
   config: {
-    usingComponents: { }
+    usingComponents: {
+      'sh-form': 'sh-form'
+    }
   },
-  behaviors: [ ],
-  properties: { },
   data: { },
   methods: { }
 }
-
-
 </script>
 
 <style>
-.sh-list {
-}
 </style>

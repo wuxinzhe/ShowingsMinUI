@@ -1,0 +1,58 @@
+<template>
+  <view class="sh-form">
+    <view class="form-title" wx:if="{{formTitle !== null}}">{{formTitle}}</view>
+    <view class="form-title" wx:if="{{formTitle === null}}">
+      <slot name="form-title"/>
+    </view>
+    <view class="form-body">
+      <slot/>
+    </view>
+  </view>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {}
+  },
+  options: {
+    multipleSlots: true
+  },
+  behaviors: [],
+  properties: {
+    formTitle: {
+      type: String,
+      value: null
+    }
+  }
+}
+
+
+</script>
+
+<style>
+  .sh-form {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .form-title {
+    color: #999999;
+    font-size: 28px;
+    padding: 0 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .form-body {
+    width: 100%;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    box-sizing: border-box;
+  }
+
+  sh-form form sh-input:first-child:before {
+    display: none;
+  }
+</style>

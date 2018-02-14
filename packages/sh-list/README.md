@@ -5,7 +5,7 @@
 ## Install
 
 ``` bash
-$ min install sh-list
+$ min install @showings_service/showings-min-ui-list
 ```
 
 
