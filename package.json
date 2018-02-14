@@ -1,0 +1,22 @@
+{
+  "name": "showings-min-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuxinzhe/ShowingsMinUI.git"
+  },
+  "keywords": [
+    "UI"
+  ],
+  "author": "Showings",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuxinzhe/ShowingsMinUI/issues"
+  },
+  "homepage": "https://github.com/wuxinzhe/ShowingsMinUI#readme"
+}
