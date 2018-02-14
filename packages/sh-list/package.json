@@ -1,9 +1,9 @@
 {
   "name": "@showings_service/showings-sh-list",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "列表 - 小程序组件",
   "publishConfig": {
-    "access": "publish"
+    "access": "public"
   },
   "main": "dist/index.js",
   "scripts": {},
