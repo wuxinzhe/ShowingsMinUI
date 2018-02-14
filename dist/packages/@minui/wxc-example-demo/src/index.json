@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "example-md": "../../wxc-example-md/src/index"
+  },
+  "component": true
+}

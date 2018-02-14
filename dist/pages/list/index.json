@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "example": "../../packages/@minui/wxc-example/src/index",
+    "example-demo": "../../packages/@minui/wxc-example-demo/src/index",
+    "example-md": "../../packages/@minui/wxc-example-md/src/index",
+    "demo-default": "./demos/demo-default"
+  }
+}

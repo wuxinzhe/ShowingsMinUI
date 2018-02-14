@@ -1,0 +1,15 @@
+<view class="example--box">
+    <view class="example--demo demo">
+        <view class="demo-inner">
+            <slot></slot>
+        </view>
+    </view>
+    <view class="example--meta meta">
+        <view class="meta-title">{{title}}</view>
+        <view class="meta-desc">{{desc}}</view>
+    </view>
+    <view class="example--source">
+        <view class="view-btn {{viewSourceClass}}" bindtap="bindViewSourceEvent">{{ isExpandSource ? 'Hide' : 'Show' }} Code</view>
+        <example-md wx:if="{{isExpandSource}}" content="{{source}}" type="demo" _pid="{{_pid}}"></example-md>
+    </view>
+</view>

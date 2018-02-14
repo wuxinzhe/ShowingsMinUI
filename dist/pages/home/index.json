@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "wxc-example-menu": "../../packages/@minui/wxc-example-menu/src/index"
+  }
+}

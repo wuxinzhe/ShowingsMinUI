@@ -1,0 +1,57 @@
+.example--box {
+  overflow: hidden;
+  border: 1rpx solid #e0e0e0;
+  border-radius: 7rpx;
+  margin: 50rpx 0 0;
+  transition: all .2s ease;
+  box-shadow: 0 0 6rpx rgba(0, 0, 0, .15);
+  z-index: 10;
+  background: #fff;
+}
+
+.demo{
+  padding: 15rpx;
+  /* background: #f6f6f6; */
+}
+
+.demo-inner{
+  background: #fff;
+}
+
+.meta {
+  position: relative;
+  margin-top: 40rpx;
+  border-top: 1rpx solid #e9e9e9;
+  padding: 20rpx 15rpx 15rpx 20rpx;
+}
+
+.meta-title {
+  position: absolute;
+  top: -24rpx;
+  line-height: 26rpx;
+  padding: 10rpx 14rpx;
+  font-size: 26rpx;
+  color: #555;
+  border-radius: 8rpx;
+  background: #f2f2f2;
+  transition: background-color .4s ease;
+}
+
+.meta-desc {
+  margin-top: 20rpx;
+  color: #777;
+  font-size: 24rpx;
+}
+
+.example--source {
+  position: relative;
+}
+
+.view-btn{
+  position: absolute;
+  right: 20rpx;
+  top: -52rpx;
+  color: #369;
+  opacity: .5;
+  font-size: 26rpx;
+}

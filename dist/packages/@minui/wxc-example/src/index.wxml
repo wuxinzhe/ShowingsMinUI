@@ -1,0 +1,15 @@
+<view class="example example--wrap">
+    <!-- head -->
+    <view wx:if="{{title || desc}}" class="example__head">
+        <view wx:if="{{title}}" class="example__head--title">{{title}}</view>
+        <view wx:if="{{title && desc}}" class="example__head--line"></view>
+        <view wx:if="{{desc}}" class="example__head--desc">{{desc}}</view>
+    </view>
+
+    <slot></slot>
+
+    <!-- foot -->
+    <!-- <navigator class="example__foot" openType="switchTab" url="/pages/component/index" hover-class="none">
+      <image class="example__foot--icon" src="https://s10.mogucdn.com/mlcdn/c45406/170913_0e8g7dl1f2l75a8h6he12436a8024_152x23.png"></image>
+    </navigator> -->
+</view>

@@ -1,0 +1,21 @@
+<view class="example-menu">
+    <block wx:for="{{menus}}" wx:key="{{item.id}}">
+        <view class="example-menu__item">
+            <view class="example-menu__head {{item.open ? 'example-menu__head--show' : ''}}" data-id="{{item.id}}" bindtap="onToggle">
+                <view class="example-menu__title">{{item.name}}</view>
+                <image class="example-menu__image {{item.open ? 'example-menu__image--show' : ''}}" src="{{item.icon}}"></image>
+            </view>
+
+            <view class="example-menu__body {{item.open ? 'example-menu__body--show' : ''}}">
+                <view class="example-menu__pages {{item.open ? 'example-menu__pages--show' : ''}}">
+                    <block wx:for="{{item.pages}}" wx:for-item="page" wx:key="*item">
+                        <navigator url="/pages/{{page.id}}/index" class="example-menu__navigator navigator">
+                            <view class="navigator__text">{{page.id}}</view>
+                            <view class="navigator__arrow"></view>
+                        </navigator>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

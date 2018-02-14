@@ -1,22 +1,27 @@
 {
-  "name": "showings-min-ui",
+  "name": "ShowingsMinUI",
+  "description": "ShowingsMinUI-组件库",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wuxinzhe/ShowingsMinUI.git"
+    "url": "https://github.com/wuxinzhe/ShowingsMinUI.git"
   },
-  "keywords": [
-    "UI"
-  ],
-  "author": "Showings",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wuxinzhe/ShowingsMinUI/issues"
+  "author": "wuxinzhe",
+  "license": "MIT",
+  "dependencies": {
+    "@minui/wxc-example": "^1.0.0",
+    "@minui/wxc-example-demo": "^1.0.0",
+    "@minui/wxc-example-md": "^1.0.0",
+    "@minui/wxc-example-menu": "^1.0.0"
   },
-  "homepage": "https://github.com/wuxinzhe/ShowingsMinUI#readme"
+  "devDependencies": {
+    "babel-plugin-syntax-export-extensions": "^6.13.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "minConfig": {
+    "projectType": "component"
+  }
 }

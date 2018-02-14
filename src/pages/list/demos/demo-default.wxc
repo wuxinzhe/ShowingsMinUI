@@ -1,0 +1,18 @@
+<template>
+  <sh-list></sh-list>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      'sh-list': 'sh-list'
+    }
+  },
+  data: { },
+  methods: { }
+}
+</script>
+
+<style>
+</style>

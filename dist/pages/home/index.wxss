@@ -1,0 +1,27 @@
+.index-hd {
+  padding: 70rpx;
+  text-align: center;
+}
+.index-bd {
+  padding: 0 30rpx 40rpx;
+}
+.index-ft {
+  padding-bottom: 20rpx;
+  text-align: center;
+}
+.index-logo {
+  width: 100rpx;
+  height: 100rpx;
+}
+.index-desc {
+  margin-top: 20rpx;
+  color: #888888;
+  font-size: 28rpx;
+}
+.provider {
+  position: fixed;
+  width: 100%;
+  bottom: 120rpx;
+  color: #a9a9a9;
+  text-align: center;
+}

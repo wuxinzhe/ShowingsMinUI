@@ -1,0 +1,223 @@
+/* code 下语法缩进，由wxc工具编译，将2个空格替换为一个md--tab */
+.md--tab{
+  display: inline-block;
+  width: 28rpx;
+}
+
+/* 以下是 markdown.wxss 的样式 */
+.md-p,
+.md-blockquote,
+.md-ul,
+.md-ol,
+.md-dl,
+.md-table{
+  margin-top: 0;
+  margin-bottom: 15rpx;
+}
+
+.md-a {
+  color: #4183c4;
+  text-decoration: none;
+  background: transparent;
+}
+
+.md-strong {
+  font-weight: bold;
+}
+
+.md-img {
+  border: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.md-hr {
+  box-sizing: content-box;
+  height: 0;
+  margin: 15rpx 0;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0 none;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.md-hr:before {
+  display: table;
+  content: "";
+}
+
+.md-hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.md-h1,
+.md-h2,
+.md-h3,
+.md-h4,
+.md-h5,
+.md-h6 {
+  position: relative;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.md-h1 {
+  font-size: 44rpx;
+  line-height: 1.2;
+  padding: 20rpx 0 10rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.md-h2 {
+  font-size: 40rpx;
+  line-height: 1.225;
+  padding: 20rpx 0 10rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.md-h3 {
+  font-size: 36rpx;
+  line-height: 1.45;
+}
+
+.md-h4 {
+  font-size: 32rpx;
+}
+
+.md-h5 {
+  font-size: 28rpx;
+}
+
+.md-h6 {
+  font-size: 24rpx;
+}
+
+.md-td,
+.md-th {
+  padding: 0;
+}
+
+.md-code {
+  padding: 5rpx 0;
+  margin: 0;
+  font: 24rpx Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+/* .md-code:before,
+.md-code:after {
+  letter-spacing: -4rpx;
+  content: "\00a0";
+} */
+
+.md-blockquote {
+  margin: 0;
+  padding: 0 15rpx;
+  color: #777;
+  border-left: 6rpx solid #ddd;
+}
+.md-p{
+  font-size: 16rpx;
+}
+
+.md-ul,
+.md-ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.md-ol {
+  list-style-type: lower-roman;
+}
+
+.md-ol {
+  list-style-type: lower-alpha;
+}
+
+.md-dd {
+  margin-left: 0;
+}
+
+.md-kbd {
+  background-color: #e7e7e7;
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2rpx;
+  border: 1rpx solid #cfcfcf;
+  color: #000;
+  padding: 3rpx 5rpx;
+  line-height: 10rpx;
+  font: 16rpx Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.md-ul,
+.md-ol {
+  padding-left: 32rpx;
+}
+
+.md-ul .md-ul,
+.md-ul .md-ol,
+.md-ol .md-ol,
+.md-ol .md-ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.md-dl {
+  padding: 0;
+}
+
+.md-dl .md-dt {
+  padding: 0;
+  margin-top: 15rpx;
+  font-size: 16rpx;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.md-dl .md-dd {
+  padding: 0 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.md-table {
+  display: block;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  overflow: auto;
+}
+
+.md-tr {
+  background-color: #fff;
+  border-top: 1rpx solid #ccc;
+}
+
+.md-tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.md-th {
+  font-weight: bold;
+}
+
+.md-th,
+.md-td {
+  width: 620rpx;
+  padding: 6rpx 10rpx;
+  border: 1rpx solid #ddd;
+}
+
+.md-th:first-child,
+.md-td:first-child {
+  width: 120rpx !important;
+  word-break: break-all;
+  word-wrap: break-word;
+}

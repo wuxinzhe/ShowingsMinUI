@@ -1,0 +1,11 @@
+@import './style/index.wxss';
+
+.example__md {
+  color: #555;
+  font-size: 24rpx;
+}
+.example__md--demo{
+  display: block;
+  background: #f6f6f6;
+  padding: 20rpx;
+}

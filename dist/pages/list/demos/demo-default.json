@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "sh-list": "../../../packages/sh-list/dist/index"
+  },
+  "component": true
+}

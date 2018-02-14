@@ -1,0 +1,22 @@
+{
+  "prefix": "sh",
+  "dest": "dist",
+  "npm": {
+    "dest": "dist/packages",
+    "scope": ""
+  },
+  "compilers": {
+    "babel": {
+      "sourceMaps": "inline",
+      "presets": [
+        "env"
+      ],
+      "plugins": [
+        "syntax-export-extensions",
+        "transform-class-properties",
+        "transform-decorators-legacy",
+        "transform-export-extensions"
+      ]
+    }
+  }
+}
