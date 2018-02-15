@@ -1,8 +1,12 @@
 <template>
   <example title="sh-popup" desc="弹出层">
 
-    <example-demo title="请填写示例名称" desc="请填写示例描述">
+    <example-demo title="基础示例">
       <demo-default></demo-default>
+    </example-demo>
+
+    <example-demo title="嵌套表单" desc="弹出层中嵌套表单控制">
+      <demo-form></demo-form>
     </example-demo>
 
   </example>
@@ -10,15 +14,16 @@
 
 <script>
 export default {
-  config: {
-    usingComponents: {
-      'example': '@minui/wxc-example',
-      'example-demo': '@minui/wxc-example-demo',
-      'example-md': '@minui/wxc-example-md',
-      'demo-default': './demos/demo-default'
-    }
-  },
-  data: { }
+    config: {
+        usingComponents: {
+            'example': '@minui/wxc-example',
+            'example-demo': '@minui/wxc-example-demo',
+            'example-md': '@minui/wxc-example-md',
+            'demo-default': './demos/demo-default',
+            'demo-form': './demos/demo-form'
+        }
+    },
+    data: {}
 }
 </script>
 

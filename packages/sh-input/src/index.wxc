@@ -67,6 +67,7 @@ export default {
             this.setData({
                 value: value
             })
+            this.triggerEvent('onInput', {value})
         }
     }
 }

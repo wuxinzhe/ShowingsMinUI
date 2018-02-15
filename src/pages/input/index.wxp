@@ -3,20 +3,26 @@
     <example-demo title="普通文本输入" desc="文本输入基础用法">
       <demo-default></demo-default>
     </example-demo>
+    <example-demo title="数据绑定" desc="小程序的数据流是单向的，经过尝试，强行的通过回调函数去做双向绑定，会产生一些不良体验，建议非到万不得已的情况下，请不要用onInput回调函数修改sh-input组件的value属性，而可以针对特定的使用场景做一个中间数据">
+      <demo-model></demo-model>
+    </example-demo>
   </example>
 </template>
 
 <script>
+
 export default {
-  config: {
-    usingComponents: {
-      'example': '@minui/wxc-example',
-      'example-demo': '@minui/wxc-example-demo',
-      'example-md': '@minui/wxc-example-md',
-      'demo-default': './demos/demo-default'
+    config: {
+        usingComponents: {
+            'example': '@minui/wxc-example',
+            'example-demo': '@minui/wxc-example-demo',
+            'example-md': '@minui/wxc-example-md',
+            'demo-default': './demos/demo-default',
+            'demo-model': './demos/demo-model'
+        }
+    },
+    data: {
     }
-  },
-  data: { }
 }
 </script>
 

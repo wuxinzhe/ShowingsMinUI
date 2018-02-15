@@ -12,25 +12,30 @@
 
 <script>
 export default {
-  config: {
-    usingComponents: {}
-  },
-  options: {
-    multipleSlots: true
-  },
-  behaviors: [],
-  properties: {
-    formTitle: {
-      type: String,
-      value: null
+    config: {
+        usingComponents: {}
+    },
+    options: {
+        multipleSlots: true
+    },
+    behaviors: [],
+    properties: {
+        formTitle: {
+            type: String,
+            value: null
+        }
     }
-  }
 }
 
 
 </script>
 
 <style>
+  sh-form {
+    display: block;
+    width: 100%;
+  }
+
   .sh-form {
     display: block;
     width: 100%;
@@ -52,7 +57,8 @@ export default {
     box-sizing: border-box;
   }
 
-  sh-form form sh-input:first-child:before {
+  sh-form form sh-input:first-child:before,
+  sh-form sh-input:first-child:before {
     display: none;
   }
 </style>

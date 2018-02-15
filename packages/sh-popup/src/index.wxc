@@ -5,7 +5,7 @@
       <view class='popup-title'>
         <text style='color:#909399' bindtap='onCancel'>取消</text>
         <text>{{title}}</text>
-        <view bindtap='onConfirm' style='position:relative'>
+        <view bindtap='onConfirm' style='position:relative' wx:if="{{confirmVisible}}">
           <text style='color:#E6A23C'>确定</text>
           <button open-type='share' class='share-btn' wx:if="{{share}}"></button>
         </view>
@@ -32,6 +32,10 @@ export default {
         share: {
             type: Boolean,
             value: false
+        },
+        confirmVisible: {
+            type: Boolean,
+            value: true
         }
     },
     data: {},
