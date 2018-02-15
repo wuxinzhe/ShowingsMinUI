@@ -1,6 +1,6 @@
 {
   "name": "@showings-min/sh-input",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "文本输入 - 小程序组件",
   "publishConfig": {
     "access": "public"

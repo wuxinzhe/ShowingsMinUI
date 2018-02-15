@@ -1,6 +1,6 @@
 {
   "name": "@showings-min/sh-white-space",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "上下留白 - 小程序组件",
   "publishConfig": {
     "access": "public"
