@@ -1,16 +1,32 @@
 <template>
-  <sh-form></sh-form>
+  <form bindsubmit="onSubmit">
+    <sh-form formTitle="ShowingsForm">
+      <sh-input label="用户名" placeholder="请输入用户名" name="username"></sh-input>
+    </sh-form>
+    <sh-white-space></sh-white-space>
+    <sh-wing-blank>
+      <button type="primary" form-type="submit">提交</button>
+    </sh-wing-blank>
+  </form>
 </template>
 
 <script>
 export default {
-  config: {
-    usingComponents: {
-      'sh-form': 'sh-form'
+    config: {
+        usingComponents: {
+            'sh-form': 'sh-form',
+            'sh-wing-blank': 'sh-wing-blank',
+            'sh-input': 'sh-input',
+            'sh-white-space': 'sh-white-space'
+        }
+    },
+    data: {},
+    methods: {
+        onSubmit ({detail}) {
+            const {value} = detail
+            console.log(value)
+        }
     }
-  },
-  data: { },
-  methods: { }
 }
 </script>
 
