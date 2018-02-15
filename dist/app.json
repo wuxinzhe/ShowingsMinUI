@@ -6,7 +6,8 @@
     "pages/input/index",
     "pages/list/index",
     "pages/popup/index",
-    "pages/white-space/index"
+    "pages/white-space/index",
+    "pages/wing-blank/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",

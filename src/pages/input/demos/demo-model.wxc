@@ -3,7 +3,7 @@
   <view>modelValue:{{modelValue}}</view>
   <button bindtap="onShow">Popup Form</button>
   <sh-popup title="Popup-Form" visible="{{visible}}" bind:onConfirm="onConfirm">
-    <sh-form>
+    <sh-form formTitle="ShowingsForm">
       <sh-input label="用户名" value="{{showValue}}" placeholder="请输入用户名" name="username"
                 bind:onInput="onInput"></sh-input>
     </sh-form>

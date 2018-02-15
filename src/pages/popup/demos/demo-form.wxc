@@ -6,8 +6,10 @@
         <sh-input label="用户名" placeholder="请输入用户名" name="username"></sh-input>
         <sh-input label="密码" placeholder="请输入6位密码.." password="true" name="password"></sh-input>
       </sh-form>
-      <sh-white-space size="lg"></sh-white-space>
-      <button form-type="submit">确定</button>
+      <sh-white-space></sh-white-space>
+      <sh-wing-blank>
+        <button form-type="submit">确定</button>
+      </sh-wing-blank>
     </form>
   </sh-popup>
 </template>
@@ -19,7 +21,8 @@ export default {
             'sh-popup': 'sh-popup',
             'sh-form': 'sh-form',
             'sh-input': 'sh-input',
-            'sh-white-space': 'sh-white-space'
+            'sh-white-space': 'sh-white-space',
+            'sh-wing-blank': 'sh-wing-blank'
         }
     },
     data: {
@@ -34,6 +37,9 @@ export default {
         onSubmit ({detail}) {
             const {value} = detail
             console.log(value)
+            this.setData({
+                visible: false
+            })
         }
     }
 }

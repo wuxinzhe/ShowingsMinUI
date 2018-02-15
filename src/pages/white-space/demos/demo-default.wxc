@@ -1,0 +1,29 @@
+<template>
+  <view class="block">Block</view>
+  <sh-white-space></sh-white-space>
+  <view class="block">Block</view>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {
+            'sh-white-space': 'sh-white-space'
+        }
+    }
+}
+</script>
+
+<style>
+
+  .block {
+    display: block;
+    width: 100%;
+    background-color: #9B9B9B;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+</style>

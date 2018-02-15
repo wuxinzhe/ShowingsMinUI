@@ -1,21 +1,21 @@
-# sh-white-space
+# sh-wing-blank
 
-> 上下留白 - 小程序组件
+> 两翼留白 - 小程序组件
 
 ## Install
 
 ``` bash
-$ min install @showings-min/sh-white-space
+$ min install @showings-min/sh-wing-blank
 ```
 
 
 ## API
 
-### WhiteSpace
+### WingBlank
 
 | 名称                  | 描述                         |
 |----------------------|------------------------------|
-|`size`           | String: 可选值[lg/medium/mini]|
+|`size`           | String: 可选值[lg/medium/mini]         |
 
 ## ChangeLog
 

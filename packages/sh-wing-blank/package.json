@@ -1,0 +1,19 @@
+{
+  "name": "@showings-min/sh-wing-blank",
+  "version": "1.0.0",
+  "description": "两翼留白 - 小程序组件",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuxinzhe/ShowingsMinUI/tree/master/packages/sh-wing-blank"
+  },
+  "author": "",
+  "license": "MIT",
+  "minConfig": {
+    "component": true
+  }
+}

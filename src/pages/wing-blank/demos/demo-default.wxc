@@ -1,0 +1,47 @@
+<template>
+  <view class="container">
+    <sh-wing-blank size="lg">
+      <view class="block">Block</view>
+    </sh-wing-blank>
+    <sh-white-space></sh-white-space>
+    <sh-wing-blank>
+      <view class="block">Block</view>
+    </sh-wing-blank>
+    <sh-white-space></sh-white-space>
+    <sh-wing-blank size="mini">
+      <view class="block">Block</view>
+    </sh-wing-blank>
+  </view>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {
+            'sh-wing-blank': 'sh-wing-blank',
+            'sh-white-space': 'sh-white-space'
+        }
+    },
+    data: {},
+    methods: {}
+}
+</script>
+
+<style>
+  .container {
+    display: block;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+  }
+
+  .block {
+    display: block;
+    width: 100%;
+    background-color: #9B9B9B;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+</style>

@@ -1,11 +1,10 @@
 <template>
-  <sh-form formTitle="Showings-Input">
-    <form bindsubmit="onSubmit">
+  <form bindsubmit="onSubmit">
+    <sh-form formTitle="Showings-Input">
       <sh-input label="用户名" placeholder="请输入用户名" name="username"></sh-input>
-      <sh-input label="密码" placeholder="请输入6位密码.." password="true" name="password">
-      </sh-input>
-    </form>
-  </sh-form>
+      <sh-input label="密码" placeholder="请输入6位密码.." password="true" name="password"></sh-input>
+    </sh-form>
+  </form>
 </template>
 
 <script>

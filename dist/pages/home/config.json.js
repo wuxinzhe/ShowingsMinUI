@@ -33,6 +33,12 @@ module.exports = {
       "icon": "",
       "pages": [
         {
+          "id": "wing-blank",
+          "name": "两翼留白",
+          "icon": "",
+          "code": ""
+        },
+        {
           "id": "white-space",
           "name": "上下留白",
           "icon": "",

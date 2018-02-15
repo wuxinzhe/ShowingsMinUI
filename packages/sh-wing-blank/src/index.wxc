@@ -1,5 +1,7 @@
 <template>
-  <view class="sh-white-space {{size}}"></view>
+  <view class="sh-wing-blank {{size}}">
+    <slot/>
+  </view>
 </template>
 
 <script>
@@ -19,20 +21,21 @@ export default {
 </script>
 
 <style>
-  sh-white-space, .sh-white-space {
+  sh-wing-blank,
+  .sh-wing-blank {
     display: block;
-    width: 100%;
-  }
-
-  .medium {
-    height: 20px;
-  }
-
-  .lg {
-    height: 40px;
+    box-sizing: border-box;
   }
 
   .mini {
-    height: 10px;
+    margin: 0 10px;
+  }
+
+  .medium {
+    margin: 0 20px;
+  }
+
+  .lg {
+    margin: 0 40px;
   }
 </style>
