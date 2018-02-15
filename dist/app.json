@@ -5,7 +5,8 @@
     "pages/form/index",
     "pages/input/index",
     "pages/list/index",
-    "pages/popup/index"
+    "pages/popup/index",
+    "pages/white-space/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",

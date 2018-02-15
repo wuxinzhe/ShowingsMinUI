@@ -1,0 +1,35 @@
+<template>
+  <view class="sh-white-space {{size}}">
+  </view>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {}
+    },
+    properties: {
+        size: {
+            type: String,
+            value: 'medium'
+        }
+    }
+}
+
+
+</script>
+
+<style>
+  sh-white-space, .sh-white-space {
+    display: block;
+    width: 100%;
+  }
+
+  .medium {
+    height: 20px;
+  }
+
+  .lg{
+    height: 40px;
+  }
+</style>

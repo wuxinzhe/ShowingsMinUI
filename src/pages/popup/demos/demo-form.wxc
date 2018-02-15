@@ -1,12 +1,14 @@
 <template>
   <button bindtap="onShow">Popup Form</button>
-  <sh-popup title="Popup-Form" visible="{{visible}}">
-    <sh-form>
-      <form>
-        <sh-input label="用户名" placeholder="请输入用户名" name="username" bind:onInput="onInput"></sh-input>
+  <sh-popup title="Popup-Form" visible="{{visible}}" confirmVisible="{{false}}">
+    <form bindsubmit="onSubmit">
+      <sh-form>
+        <sh-input label="用户名" placeholder="请输入用户名" name="username"></sh-input>
         <sh-input label="密码" placeholder="请输入6位密码.." password="true" name="password"></sh-input>
-      </form>
-    </sh-form>
+      </sh-form>
+      <sh-white-space size="lg"></sh-white-space>
+      <button form-type="submit">确定</button>
+    </form>
   </sh-popup>
 </template>
 
@@ -16,7 +18,8 @@ export default {
         usingComponents: {
             'sh-popup': 'sh-popup',
             'sh-form': 'sh-form',
-            'sh-input': 'sh-input'
+            'sh-input': 'sh-input',
+            'sh-white-space': 'sh-white-space'
         }
     },
     data: {
@@ -28,7 +31,7 @@ export default {
                 visible: true
             })
         },
-        onInput ({detail}) {
+        onSubmit ({detail}) {
             const {value} = detail
             console.log(value)
         }

@@ -2,13 +2,17 @@
   <view class="sh-popup {{visible?'show':'hidden'}}">
     <view class='backdrop' bindtap='onHiddenPopup'></view>
     <view class='popup-body'>
-      <view class='popup-title'>
-        <text style='color:#909399' bindtap='onCancel'>取消</text>
-        <text>{{title}}</text>
-        <view bindtap='onConfirm' style='position:relative' wx:if="{{confirmVisible}}">
-          <text style='color:#E6A23C'>确定</text>
-          <button open-type='share' class='share-btn' wx:if="{{share}}"></button>
+      <view class='popup-header'>
+        <view class="popup-header-left">
+          <text style='color:#909399' bindtap='onCancel'>取消</text>
         </view>
+        <text>{{title}}</text>
+       <view class="popup-header-right">
+         <view bindtap='onConfirm' style='position:relative' wx:if="{{confirmVisible}}">
+           <text style='color:#E6A23C'>确定</text>
+           <button open-type='share' class='share-btn' wx:if="{{share}}"></button>
+         </view>
+       </view>
       </view>
       <view class='popup-content'>
         <slot/>
@@ -119,7 +123,16 @@ export default {
     transition: bottom 0.6s ease;
   }
 
-  .popup-title {
+  .popup-header-left {
+    min-width: 100px;
+  }
+
+  .popup-header-right{
+    min-width: 100px;
+    text-align: right;
+  }
+
+  .popup-header {
     display: flex;
     width: 100%;
     font-size: 30px;
