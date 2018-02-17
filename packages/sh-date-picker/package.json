@@ -1,6 +1,6 @@
 {
   "name": "@showings-min/sh-date-picker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "日期选择器 - 小程序组件",
   "publishConfig": {
     "access": "public"
@@ -13,6 +13,9 @@
   },
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "@showings-min/sh-modal": "^1.0.1"
+  },
   "minConfig": {
     "component": true
   }
