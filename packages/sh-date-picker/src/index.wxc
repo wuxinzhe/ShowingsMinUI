@@ -12,13 +12,13 @@
       <picker-view indicator-style="height: 50rpx;" class="picker-view" value="{{dateArray}}"
                    bindchange="bindChange">
         <picker-view-column>
-          <view wx:for="{{years}}" class="picker-view-column">{{item}}年</view>
+          <view wx:for="{{years}}" class="picker-view-column" wx:key="{{item}}">{{item}}年</view>
         </picker-view-column>
         <picker-view-column>
-          <view wx:for="{{months}}" class="picker-view-column">{{item}}月</view>
+          <view wx:for="{{months}}" class="picker-view-column" wx:key="{{item}}">{{item}}月</view>
         </picker-view-column>
         <picker-view-column>
-          <view wx:for="{{days}}" class="picker-view-column">{{item}}日</view>
+          <view wx:for="{{days}}" class="picker-view-column" wx:key="{{item}}">{{item}}日</view>
         </picker-view-column>
       </picker-view>
     </view>
@@ -154,6 +154,7 @@ export default {
 
   .date-view {
     font-size: 25px;
+    flex-grow: 1;
   }
 
   .date-view text {

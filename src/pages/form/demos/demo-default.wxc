@@ -2,6 +2,7 @@
   <form bindsubmit="onSubmit">
     <sh-form formTitle="ShowingsForm">
       <sh-input label="用户名" placeholder="请输入用户名" name="username"></sh-input>
+      <sh-date-picker label="日期" name="date"></sh-date-picker>
     </sh-form>
     <sh-white-space></sh-white-space>
     <sh-wing-blank>
@@ -16,6 +17,7 @@ export default {
         usingComponents: {
             'sh-form': 'sh-form',
             'sh-input': 'sh-input',
+            'sh-date-picker': 'sh-date-picker',
             'sh-wing-blank': 'sh-wing-blank',
             'sh-white-space': 'sh-white-space'
         }
