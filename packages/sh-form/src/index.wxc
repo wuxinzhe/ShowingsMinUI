@@ -63,7 +63,9 @@ export default {
   }
 
   form sh-form sh-input:first-child:before,
-  sh-form sh-input:first-child:before {
+  sh-form sh-input:first-child:before,
+  form sh-form sh-date-picker:first-child:before,
+  sh-form sh-date-picker:first-child:before {
     display: none;
   }
 </style>

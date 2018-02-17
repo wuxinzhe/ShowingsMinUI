@@ -1,5 +1,5 @@
 <template>
-  <label wx:if="{{label!==null}}" style="{{'width:'+labelWidth}};">
+  <label wx:if="{{label!==null}}" style="{{'width:'+labelWidth}}">
     {{label}}
   </label>
   <input password="{{password}}"

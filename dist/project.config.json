@@ -20,12 +20,18 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "Modal",
-					"pathName": "pages/modal/index"
+					"pathName": "pages/modal/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "DatePicker",
+					"pathName": "pages/date-picker/index"
 				}
 			]
 		}

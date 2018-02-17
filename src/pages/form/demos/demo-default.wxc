@@ -15,8 +15,8 @@ export default {
     config: {
         usingComponents: {
             'sh-form': 'sh-form',
-            'sh-wing-blank': 'sh-wing-blank',
             'sh-input': 'sh-input',
+            'sh-wing-blank': 'sh-wing-blank',
             'sh-white-space': 'sh-white-space'
         }
     },

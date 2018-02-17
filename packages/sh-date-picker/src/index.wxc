@@ -1,25 +1,111 @@
 <template>
-  <label wx:if="{{label!==null}}" style="{{'width:'+labelWidth}};">
+  <label wx:if="{{label!==null}}" style="{{'width:'+labelWidth}}">
     {{label}}
   </label>
+  <view bindtap="onOpenModal" class="date-view">
+    <text>{{value[0]}}年</text>
+    <text>{{value[1]}}月</text>
+    <text>{{value[2]}}日</text>
+  </view>
+  <sh-modal title="请选择日期" visible="{{modalVisible}}" bind:onConfirm="setDateValue">
+    <view slot="modal-body">
+      <picker-view indicator-style="height: 50rpx;" class="picker-view" value="{{dateArray}}"
+                   bindchange="bindChange">
+        <picker-view-column>
+          <view wx:for="{{years}}" class="picker-view-column">{{item}}年</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view wx:for="{{months}}" class="picker-view-column">{{item}}月</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view wx:for="{{days}}" class="picker-view-column">{{item}}日</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+  </sh-modal>
 </template>
 
 <script>
+const date = new Date()
+const years = []
+const months = []
+const days = []
+
+for (let i = 1990; i <= 2500; i++) {
+    years.push(i)
+}
+
+for (let i = 1; i <= 12; i++) {
+    months.push(i)
+}
+
+for (let i = 1; i <= 31; i++) {
+    days.push(i)
+}
+
 export default {
     config: {
-        usingComponents: {}
+        usingComponents: {
+            'sh-modal': '@showings-min/sh-modal'
+        }
     },
     behaviors: ['wx://form-field'],
     properties: {
         name: String,
-        value: String,
+        value: {
+            type: Array,
+            value: [date.getFullYear(), date.getMonth() + 1, date.getDay()]
+        },
         label: {
             type: String,
             value: null
+        },
+        labelWidth: {
+            type: String,
+            value: '120rpx'
         }
     },
-    data: {},
-    methods: {}
+    data: {
+        modalVisible: false,
+        years: years,
+        months: months,
+        days: days,
+        year: date.getFullYear(),
+        month: date.getMonth() + 1,
+        day: date.getDay(),
+        dateArray: [years.indexOf(date.getFullYear()), date.getMonth(), days.indexOf(date.getDay())]
+    },
+    methods: {
+        onOpenModal () {
+            this.setData({
+                modalVisible: true
+            })
+        },
+        bindChange: function ({detail}) {
+            const {value} = detail
+            let temp = new Date(this.data.years[value[0]], this.data.months[value[1]])
+            temp.setDate(0)
+            let days = []
+            for (let i = 1; i <= temp.getDate(); i++) {
+                days.push(i)
+            }
+            this.setData({
+                days: days
+            })
+            this.setData({
+                year: this.data.years[value[0]],
+                month: this.data.months[value[1]],
+                day: days[value[2] >= days.length ? days.length - 1 : value[2]]
+            })
+            this.triggerEvent('onChange', {currentDate: [this.data.year, this.data.month, this.data.day]})
+        },
+        setDateValue () {
+            this.setData({
+                value: [this.data.year, this.data.month, this.data.day]
+            })
+            this.triggerEvent('onConfirm', {currentDate: this.data.value})
+        }
+    }
 }
 
 
@@ -56,4 +142,22 @@ export default {
     font-size: 25px;
     text-align: right;
   }
+
+  .picker-view {
+    width: 100%;
+    height: 300px;
+  }
+
+  .picker-view-column {
+    line-height: 60px;
+  }
+
+  .date-view {
+    font-size: 25px;
+  }
+
+  .date-view text {
+    margin-right: 15px;
+  }
+
 </style>

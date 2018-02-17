@@ -1,16 +1,40 @@
 <template>
-  <sh-date-picker></sh-date-picker>
+  <form bindsubmit="onSubmit">
+    <sh-form formTitle="Showings-Date-Picker">
+      <sh-date-picker label="日期" name="date" value="{{dateDefault}}" bind:onChange="onDateChange"
+                      bind:onConfirm="onDateConfirm"></sh-date-picker>
+    </sh-form>
+    <sh-white-space></sh-white-space>
+    <sh-wing-blank>
+      <button type="primary" form-type="submit">提交</button>
+    </sh-wing-blank>
+  </form>
 </template>
 
 <script>
 export default {
-  config: {
-    usingComponents: {
-      'sh-date-picker': 'sh-date-picker'
+    config: {
+        usingComponents: {
+            'sh-date-picker': 'sh-date-picker',
+            'sh-form': 'sh-form',
+            'sh-wing-blank': 'sh-wing-blank',
+            'sh-white-space': 'sh-white-space'
+        }
+    },
+    data: {
+        dateDefault: [2018, 6, 6]
+    },
+    methods: {
+        onSubmit ({detail}) {
+            console.log(detail)
+        },
+        onDateChange ({detail}) {
+            console.log(detail.currentDate)
+        },
+        onDateConfirm ({detail}) {
+            console.log(detail.currentDate)
+        }
     }
-  },
-  data: { },
-  methods: { }
 }
 </script>
 
