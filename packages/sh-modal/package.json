@@ -1,6 +1,6 @@
 {
   "name": "@showings-min/sh-modal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "对话框 - 小程序组件",
   "publishConfig": {
     "access": "public"
