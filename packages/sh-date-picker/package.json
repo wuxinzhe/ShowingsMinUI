@@ -1,6 +1,6 @@
 {
   "name": "@showings-min/sh-date-picker",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "日期选择器 - 小程序组件",
   "publishConfig": {
     "access": "public"
