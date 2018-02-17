@@ -1,0 +1,27 @@
+<template>
+  <button bindtap="onOpenModal">ShowModal</button>
+  <sh-modal title="操作提示" message="确定么？" mode="notice" visible="{{modalVisible}}"></sh-modal>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {
+            'sh-modal': 'sh-modal'
+        }
+    },
+    data: {
+        modalVisible: false
+    },
+    methods: {
+        onOpenModal () {
+            this.setData({
+                modalVisible: true
+            })
+        }
+    }
+}
+</script>
+
+<style>
+</style>

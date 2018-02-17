@@ -7,5 +7,27 @@
 	"setting": {
 		"newFeature": true
 	},
-	"condition": {}
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "Modal",
+					"pathName": "pages/modal/index"
+				}
+			]
+		}
+	}
 }

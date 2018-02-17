@@ -7,14 +7,14 @@
       "icon": "https://s10.mogucdn.com/mlcdn/c45406/171122_7al50lach13ji6jggj63d17h522dh_200x200.png",
       "pages": [
         {
-          "id": "date-picker",
-          "name": "日期选择器",
+          "id": "form",
+          "name": "表单",
           "icon": "",
           "code": ""
         },
         {
-          "id": "form",
-          "name": "表单",
+          "id": "date-picker",
+          "name": "日期选择器",
           "icon": "",
           "code": ""
         },
@@ -58,6 +58,12 @@
       "open": false,
       "icon": "",
       "pages": [
+        {
+          "id": "modal",
+          "name": "对话框",
+          "icon": "",
+          "code": ""
+        },
         {
           "id": "popup",
           "name": "弹出层",

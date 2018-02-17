@@ -1,0 +1,183 @@
+<template>
+  <view class="sh-modal {{visible?'show':'hidden'}}">
+    <view class='backdrop' bindtap='onHiddenPopup'></view>
+    <view class="modal">
+      <view class="modal-header">
+        <text wx:if="{{title !== null}}">{{title}}</text>
+        <slot name="modal-title"/>
+      </view>
+      <view class="modal-body">
+        <text wx:if="{{message !== null}}">{{message}}</text>
+        <slot name="modal-body"/>
+      </view>
+      <view class="modal-footer" wx:if="{{footerVisible}}">
+        <view class="confirm-btn-group" wx:if="{{mode === 'confirm'}}">
+          <view class="cancel-btn" bindtap="onCancel">取消</view>
+          <view class="confirm-btn" bindtap="onConfirm">确定</view>
+        </view>
+        <view class="confirm-btn-group" wx:if="{{mode === 'notice'}}">
+          <view class="confirm-btn" bindtap="onConfirm">确定</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {}
+    },
+    options: {
+        multipleSlots: true
+    },
+    behaviors: [],
+    properties: {
+        visible: {
+            type: Boolean,
+            value: false
+        },
+        title: {type: String, value: null},
+        message: {type: String, value: null},
+        footerVisible: {
+            type: Boolean,
+            value: true
+        },
+        mode: {type: String, value: 'confirm'}
+    },
+    data: {},
+    methods: {
+        onHiddenPopup () {
+            this.setData({
+                visible: false
+            })
+            this.triggerEvent('onCancel')
+        },
+        onCancel () {
+            this.setData({
+                visible: false
+            })
+            this.triggerEvent('onCancel')
+        },
+        onConfirm(){
+            this.setData({
+                visible: false
+            })
+            this.triggerEvent('onConfirm')
+        }
+    }
+}
+
+
+</script>
+
+<style>
+  .sh-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #5a5e66;
+    z-index: 10;
+  }
+
+  .sh-modal.show {
+    top: 0;
+  }
+
+  .sh-modal.hidden {
+    top: 100%;
+  }
+
+  .show .backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .hidden .backdrop {
+    background-color: transparent;
+  }
+
+  .backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transition: all .2s linear;
+  }
+
+  .show .modal {
+    opacity: 1;
+  }
+
+  .hidden .modal {
+    opacity: 0;
+  }
+
+  .modal {
+    position: absolute;
+    width: 600px;
+    background-color: #fff;
+    z-index: 2;
+    top: calc(50% - 200px);
+    left: calc(50% - 300px);
+    border: 1px solid #DCDFE6;
+    border-radius: 10px;
+    transition: all .2s linear;
+  }
+
+  .modal-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    font-size: 35px;
+  }
+
+  .modal-body {
+    width: 100%;
+    min-height: 140px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 28px;
+    color: #999999;
+  }
+
+  .modal-footer {
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid #F2F6FC;
+  }
+
+  .confirm-btn-group {
+    display: flex;
+    width: 100%;
+  }
+
+  .confirm-btn, .cancel-btn {
+    flex: 1;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    border-left: 1px solid #F2F6FC;
+  }
+
+  .confirm-btn:active, .cancel-btn:active {
+    background-color: #ebebeb;
+  }
+
+  .confirm-btn-group .cancel-btn {
+    border-left: none;
+  }
+
+  .confirm-btn {
+    color: #409EFF;
+  }
+
+</style>

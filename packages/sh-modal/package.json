@@ -1,0 +1,19 @@
+{
+  "name": "@showings-min/sh-modal",
+  "version": "1.0.0",
+  "description": "对话框 - 小程序组件",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuxinzhe/ShowingsMinUI/tree/master/packages/sh-modal"
+  },
+  "author": "",
+  "license": "MIT",
+  "minConfig": {
+    "component": true
+  }
+}
