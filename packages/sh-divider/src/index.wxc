@@ -52,8 +52,6 @@ export default {
 
   .sh-divider.out {
     opacity: 0;
-    padding: 0;
-    height: 0;
   }
 
   .sh-divider::after, .sh-divider::before {
