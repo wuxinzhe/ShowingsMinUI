@@ -3,6 +3,7 @@
     "pages/home/index",
     "pages/date-picker/index",
     "pages/form/index",
+    "pages/input-number/index",
     "pages/input/index",
     "pages/list/index",
     "pages/modal/index",

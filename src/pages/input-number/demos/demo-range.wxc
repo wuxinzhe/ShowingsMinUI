@@ -1,0 +1,27 @@
+<template>
+  <form bindsubmit="onSubmit">
+    <sh-form formTitle="Input Number">
+      <sh-input-number label="数量" max="1000" min="-1000" value="-666" name="number"></sh-input-number>
+    </sh-form>
+  </form>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {
+            'sh-input-number': 'sh-input-number',
+            'sh-form': 'sh-form'
+        }
+    },
+    data: {},
+    methods: {
+        onSubmit (e) {
+            console.log(e)
+        }
+    }
+}
+</script>
+
+<style>
+</style>

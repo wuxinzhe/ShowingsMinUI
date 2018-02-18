@@ -1,0 +1,152 @@
+<template>
+  <label wx:if="{{label!==null}}" style="{{'width:'+labelWidth}}">
+    {{label}}
+  </label>
+  <view class="input-number">
+    <view class='input-control input-minus' bindtap='onMinus'>-</view>
+    <input name="{{name}}"
+           value="{{value}}"
+           placeholder-class="placeholder"
+           class="input-field"
+           bindinput="onInput"
+           type="number"/>
+    <view class='input-control input-plus' bindtap='onPlus'>+</view>
+  </view>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {}
+    },
+    behaviors: ['wx://form-field'],
+    properties: {
+        name: String,
+        value: {
+            type: Number,
+            value: 0
+        },
+        label: {
+            type: String,
+            value: null
+        },
+        labelWidth: {
+            type: String,
+            value: '120rpx'
+        },
+        max: {
+            type: Number,
+            value: null
+        },
+        min: {
+            type: Number,
+            value: null
+        }
+    },
+    methods: {
+        onMinus () {
+            if (this.data.min !== null && this.data.value - 1 < this.data.min) {
+                return
+            }
+            this.setData({
+                value: --this.data.value
+            })
+            this.triggerEvent('onMinus', {value: this.data.value})
+        },
+        onPlus () {
+            if (this.data.max !== null && this.data.value + 1 > this.data.max) {
+                return
+            }
+            this.setData({
+                value: ++this.data.value
+            })
+            this.triggerEvent('onPlus', {value: this.data.value})
+        },
+        onInput ({detail}) {
+            let value = parseInt(detail.value)
+            if (this.data.min !== null && value - 1 < this.data.min) {
+                value = this.data.min
+            }
+            if (this.data.max !== null && value + 1 > this.data.max) {
+                value = this.data.max
+            }
+            this.setData({
+                value: value
+            })
+            this.triggerEvent('onInput', {value})
+        }
+    }
+}
+
+
+</script>
+
+<style>
+  sh-input-number {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+
+  sh-input-number:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    left: 30px;
+  }
+
+  sh-input-number label {
+    margin-right: 25px;
+    font-size: 25px;
+    text-align: right;
+  }
+
+  .input-number {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .input-field {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .input-control {
+    display: flex;
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .input-minus {
+    background-color: #F56C6C;
+  }
+
+  .input-plus {
+    background-color: #409eff;
+  }
+
+  .placeholder {
+    font-size: 25px;
+    color: #C0C4CC;
+  }
+</style>

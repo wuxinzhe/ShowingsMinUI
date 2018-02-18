@@ -26,6 +26,7 @@ $ min install @showings-min/sh-input
 |`max` |Number: 最大输入字数|
 |`autoFocus` |Boolean: 是否自动聚焦|
 |`focus` |Boolean: 是否聚焦|
+|`onInput(e)` |Function: 输入变化回调函数，参数内带值|
 
 
 

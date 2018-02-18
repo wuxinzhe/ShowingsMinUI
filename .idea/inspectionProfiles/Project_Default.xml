@@ -25,7 +25,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="27">
+          <list size="28">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -53,6 +53,7 @@
             <item index="24" class="java.lang.String" itemvalue="demo-mode" />
             <item index="25" class="java.lang.String" itemvalue="picker-view" />
             <item index="26" class="java.lang.String" itemvalue="picker-view-column" />
+            <item index="27" class="java.lang.String" itemvalue="sh-input-number" />
           </list>
         </value>
       </option>

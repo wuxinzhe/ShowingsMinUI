@@ -13,14 +13,20 @@
           "code": ""
         },
         {
-          "id": "date-picker",
-          "name": "日期选择器",
+          "id": "input",
+          "name": "文本输入",
           "icon": "",
           "code": ""
         },
         {
-          "id": "input",
-          "name": "文本输入",
+          "id": "input-number",
+          "name": "数字输入",
+          "icon": "",
+          "code": ""
+        },
+        {
+          "id": "date-picker",
+          "name": "日期选择器",
           "icon": "",
           "code": ""
         }

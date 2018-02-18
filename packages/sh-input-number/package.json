@@ -1,0 +1,19 @@
+{
+  "name": "@showings-min/sh-input-number",
+  "version": "1.0.0",
+  "description": "数字输入 - 小程序组件",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuxinzhe/ShowingsMinUI/tree/master/packages/sh-input-number"
+  },
+  "author": "",
+  "license": "MIT",
+  "minConfig": {
+    "component": true
+  }
+}
