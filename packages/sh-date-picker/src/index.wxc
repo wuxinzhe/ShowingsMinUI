@@ -97,13 +97,13 @@ export default {
                 month: this.data.months[value[1]],
                 day: days[value[2] >= days.length ? days.length - 1 : value[2]]
             })
-            this.triggerEvent('onChange', {currentDate: [this.data.year, this.data.month, this.data.day]})
+            this.triggerEvent('onChange', {value: [this.data.year, this.data.month, this.data.day]})
         },
         setDateValue () {
             this.setData({
                 value: [this.data.year, this.data.month, this.data.day]
             })
-            this.triggerEvent('onConfirm', {currentDate: this.data.value})
+            this.triggerEvent('onConfirm', {value: this.data.value})
         }
     }
 }

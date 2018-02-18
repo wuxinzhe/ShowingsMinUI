@@ -78,7 +78,6 @@ export default {
             const {value} = detail
             let newPickerColumns = []
             let newSelectArray = []
-
             for (let i = 0; i < value.length; i++) {
                 newPickerColumns.push(this.data.pickerColumnArray[i])
                 newSelectArray.push(value[i])
@@ -99,24 +98,26 @@ export default {
                     break
                 }
             }
-
             this.setData({
                 selectArray: newSelectArray,
                 pickerColumnArray: newPickerColumns
             })
-
         },
         setDateValue () {
             let value = []
             let temp = this.data.options
-            this.data.selectArray.forEach(idx => {
-                let {id, label, children} = temp[idx - 1]
+            for (let i = 0; i < this.data.selectArray.length; i++) {
+                if (this.data.selectArray[i] === 0) {
+                    break
+                }
+                let {id, label, children} = temp[this.data.selectArray[i] - 1]
                 value.push({id: id, label: label})
                 temp = children
-            })
+            }
             this.setData({
                 value: value
             })
+            this.triggerEvent('onConfirm', {value: this.data.value})
         }
     }
 }

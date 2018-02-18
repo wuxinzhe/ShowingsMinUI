@@ -16,11 +16,11 @@ $ min install @showings-min/sh-date-picker
 | 名称                  | 描述                         |
 |----------------------|------------------------------|
 |`name`     |String: 当触发表单容器的onSubmit方法时，所返回的字段名称（参考原生输入控件与form标签的onSubmit方法介绍）|
-|`value`    |String: 当触发表单容器的onSubmit方法时，所返回的字段值|
+|`value`    |Array: 当触发表单容器的onSubmit方法时，所返回的值，格式为[年，月，日]|
 |`label`    |String: 字段名称，与name不同意义|
 |`labelWidth`|String: 字段名宽度，例如：100rpx|
-|`onChange(e)` |Function: 日期修改即刻回调，参数e中携带currentDate            |
-|`onConfirm(e)`|Function: 点击确定后回调的函数，参数e中携带currentDate|
+|`onChange(e)` |Function: 日期修改即刻回调，参数e中携带value|
+|`onConfirm(e)`|Function: 点击确定后回调的函数，参数e中携带value|
 
 ## ChangeLog
 

@@ -29,10 +29,10 @@ export default {
             console.log(detail)
         },
         onDateChange ({detail}) {
-            console.log(detail.currentDate)
+            console.log(detail.value)
         },
         onDateConfirm ({detail}) {
-            console.log(detail.currentDate)
+            console.log(detail.value)
         }
     }
 }
