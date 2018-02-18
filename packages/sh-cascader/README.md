@@ -21,6 +21,7 @@ $ min install @showings-min/sh-cascader
 |`labelWidth`|String: 字段名宽度，例如：100rpx|
 |`title`    |String: 选择器标题|
 |`options`|Array: 级联选项，数据结构是嵌套的树形结构，具体请参考示例代码|
+|`onConfirm(e)`|Function: 点击确定后回调的函数，参数e中携带value|
 
 ## ChangeLog
 
