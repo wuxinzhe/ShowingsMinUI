@@ -2,7 +2,7 @@
   <label wx:if="{{label!==null}}" style="{{'width:'+labelWidth}}">
     {{label}}
   </label>
-  <map longitude="{{value.lng}}" markers="{{[markers]}}" latitude="{{value.lat}}" scale="{{scale}}" show-location
+  <map longitude="{{value.lng}}" markers="{{[marker]}}" latitude="{{value.lat}}" scale="{{scale}}" show-location
        class="map-view" bindtap="onTap"></map>
 </template>
 
@@ -29,7 +29,7 @@ export default {
             type: String,
             value: '120rpx'
         },
-        markers: {
+        marker: {
             type: Object,
             value: {
                 id: 1,
@@ -58,7 +58,7 @@ export default {
                             lng: longitude,
                             lat: latitude
                         },
-                        markers: {
+                        marker: {
                             id: 1,
                             latitude: latitude,
                             longitude: longitude,
