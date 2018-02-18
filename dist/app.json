@@ -3,6 +3,7 @@
     "pages/home/index",
     "pages/cascader/index",
     "pages/date-picker/index",
+    "pages/divider/index",
     "pages/form/index",
     "pages/input-number/index",
     "pages/input/index",

@@ -2,7 +2,7 @@
 	"description": "项目配置文件。",
 	"compileType": "miniprogram",
 	"libVersion": "1.9.91",
-	"appid": "wx8fd3b4a0db4a0abe",
+	"appid": "wx89312b50af6551c3",
 	"projectname": "ShowingsMinUI",
 	"setting": {
 		"newFeature": true
@@ -20,37 +20,12 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 0,
 			"list": [
 				{
 					"id": -1,
-					"name": "Modal",
-					"pathName": "pages/modal/index",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "DatePicker",
-					"pathName": "pages/date-picker/index",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "InputNumber",
-					"pathName": "pages/input-number/index",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "Map",
-					"pathName": "pages/map/index",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "Cascader",
-					"pathName": "pages/cascader/index",
-					"query": ""
+					"name": "分割线",
+					"pathName": "pages/divider/index"
 				}
 			]
 		}

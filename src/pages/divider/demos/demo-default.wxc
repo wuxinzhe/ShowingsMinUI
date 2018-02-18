@@ -1,0 +1,21 @@
+<template>
+  <sh-divider title="-"></sh-divider>
+  <sh-divider>
+    <view>分割线</view>
+  </sh-divider>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {
+            'sh-divider': 'sh-divider'
+        }
+    },
+    data: {},
+    methods: {}
+}
+</script>
+
+<style>
+</style>

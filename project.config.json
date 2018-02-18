@@ -1,8 +1,8 @@
 {
 	"description": "项目配置文件。",
 	"compileType": "miniprogram",
-	"libVersion": "1.7.1",
-	"appid": "wx8fd3b4a0db4a0abe",
+	"libVersion": "1.9.91",
+	"appid": "wx89312b50af6551c3",
 	"projectname": "ShowingsMinUI",
 	"setting": {},
 	"condition": {}

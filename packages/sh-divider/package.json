@@ -1,0 +1,19 @@
+{
+  "name": "@showings-min/sh-divider",
+  "version": "1.0.0",
+  "description": "分割线 - 小程序组件",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuxinzhe/ShowingsMinUI/tree/master/packages/sh-divider"
+  },
+  "author": "",
+  "license": "MIT",
+  "minConfig": {
+    "component": true
+  }
+}

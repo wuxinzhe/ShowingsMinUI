@@ -2,8 +2,8 @@
   <view>
     <view class="index-hd">
       <image class="index-logo"
-             src="https://s10.mogucdn.com/mlcdn/c45406/171122_5jgf1lb185bj893c95lc92b7gkk42_200x200.png"></image>
-      <view class="index-desc">ShowingsMinUI-组件库</view>
+             src="./logo.png"></image>
+      <view class="index-desc">ShowingsUI 组件库</view>
     </view>
 
     <view class="index-bd">

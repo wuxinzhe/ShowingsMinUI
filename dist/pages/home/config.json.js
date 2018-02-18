@@ -63,6 +63,12 @@ module.exports = {
           "code": ""
         },
         {
+          "id": "divider",
+          "name": "分割线",
+          "icon": "",
+          "code": ""
+        },
+        {
           "id": "list",
           "name": "列表",
           "icon": "",

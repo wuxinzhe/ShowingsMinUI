@@ -1,6 +1,6 @@
 <template>
   <form bindsubmit="onSubmit">
-    <sh-form formTitle="ShowingsForm">
+    <sh-form formTitle="Form">
       <sh-input label="用户名" placeholder="请输入用户名" name="username"></sh-input>
       <sh-date-picker label="日期" name="date"></sh-date-picker>
       <sh-input-number label="数量" value="666" name="number"></sh-input-number>
