@@ -1,6 +1,6 @@
 {
   "name": "@showings-min/sh-divider",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "分割线 - 小程序组件",
   "publishConfig": {
     "access": "public"
