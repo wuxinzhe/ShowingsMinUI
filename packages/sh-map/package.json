@@ -1,6 +1,6 @@
 {
   "name": "@showings-min/sh-map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "地图选择 - 小程序组件",
   "publishConfig": {
     "access": "public"
