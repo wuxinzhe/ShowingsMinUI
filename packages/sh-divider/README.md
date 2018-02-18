@@ -16,6 +16,7 @@ $ min install @showings-min/sh-divider
 | 名称                  | 描述                         |
 |----------------------|------------------------------|
 |`title`           |String: 分割线标题|
+|`visible`         |Boolean: 是否显示|
 |`slot`    |Slot: 可选值 default（默认插槽）|
 
 ## ChangeLog
