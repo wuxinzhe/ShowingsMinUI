@@ -10,7 +10,7 @@
   <sh-modal title="请选择日期" visible="{{modalVisible}}" bind:onConfirm="setDateValue">
     <view slot="modal-body">
       <picker-view indicator-style="height: 50rpx;" class="picker-view" value="{{dateArray}}"
-                   bindchange="bindChange">
+                   bindchange="onChange">
         <picker-view-column>
           <view wx:for="{{years}}" class="picker-view-column" wx:key="{{item}}">{{item}}年</view>
         </picker-view-column>
@@ -81,8 +81,7 @@ export default {
                 modalVisible: true
             })
         },
-        bindChange: function ({detail}) {
-            console.log(1)
+        onChange: function ({detail}) {
             const {value} = detail
             let temp = new Date(this.data.years[value[0]], this.data.months[value[1]])
             temp.setDate(0)

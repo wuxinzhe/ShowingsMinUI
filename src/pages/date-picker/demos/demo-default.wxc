@@ -1,6 +1,6 @@
 <template>
   <form bindsubmit="onSubmit">
-    <sh-form formTitle="ShowingsDatePicker">
+    <sh-form formTitle="Date Picker">
       <sh-date-picker label="日期" name="date" value="{{dateDefault}}" bind:onChange="onDateChange"
                       bind:onConfirm="onDateConfirm"></sh-date-picker>
     </sh-form>

@@ -19,6 +19,12 @@
           "code": ""
         },
         {
+          "id": "cascader",
+          "name": "级联选择器",
+          "icon": "",
+          "code": ""
+        },
+        {
           "id": "input-number",
           "name": "数字输入",
           "icon": "",

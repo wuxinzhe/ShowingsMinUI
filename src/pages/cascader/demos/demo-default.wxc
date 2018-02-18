@@ -1,10 +1,6 @@
 <template>
   <form bindsubmit="onSubmit">
-    <sh-form formTitle="ShowingsForm">
-      <sh-input label="用户名" placeholder="请输入用户名" name="username"></sh-input>
-      <sh-date-picker label="日期" name="date"></sh-date-picker>
-      <sh-input-number label="数量" value="666" name="number"></sh-input-number>
-      <sh-map label="地图" iconPath="/location.png" name="map"></sh-map>
+    <sh-form formTitle="Cascader">
       <sh-cascader label="级联选择" name="cascader" title="级联选择" options="{{options}}" value="{{value}}"></sh-cascader>
     </sh-form>
     <sh-white-space></sh-white-space>
@@ -18,14 +14,10 @@
 export default {
     config: {
         usingComponents: {
+            'sh-cascader': 'sh-cascader',
             'sh-form': 'sh-form',
-            'sh-input': 'sh-input',
-            'sh-date-picker': 'sh-date-picker',
             'sh-wing-blank': 'sh-wing-blank',
-            'sh-white-space': 'sh-white-space',
-            'sh-input-number': 'sh-input-number',
-            'sh-map': 'sh-map',
-            'sh-cascader': 'sh-cascader'
+            'sh-white-space': 'sh-white-space'
         }
     },
     data: {
@@ -77,8 +69,7 @@ export default {
     },
     methods: {
         onSubmit ({detail}) {
-            const {value} = detail
-            console.log(value)
+            console.log(detail)
         }
     }
 }

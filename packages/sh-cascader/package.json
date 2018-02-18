@@ -1,0 +1,22 @@
+{
+  "name": "@showings-min/sh-cascader",
+  "version": "1.0.0",
+  "description": "级联选择器 - 小程序组件",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuxinzhe/ShowingsMinUI/tree/master/packages/sh-cascader"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@showings-min/sh-modal": "^1.0.1"
+  },
+  "minConfig": {
+    "component": true
+  }
+}

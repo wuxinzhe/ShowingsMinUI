@@ -11,7 +11,7 @@
     </view>
 
     <view class="index-ft">
-      <view class="provider">Created by Min</view>
+      <view class="provider">Created by Showings</view>
     </view>
   </view>
 
@@ -59,7 +59,6 @@ export default {
   }
 
   .provider {
-    position: fixed;
     width: 100%;
     bottom: 120px;
     color: #a9a9a9;

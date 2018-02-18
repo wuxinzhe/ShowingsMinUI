@@ -20,7 +20,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
@@ -44,6 +44,12 @@
 					"id": -1,
 					"name": "Map",
 					"pathName": "pages/map/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Cascader",
+					"pathName": "pages/cascader/index",
 					"query": ""
 				}
 			]
