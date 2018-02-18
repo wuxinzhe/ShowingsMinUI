@@ -6,6 +6,7 @@
     "pages/input-number/index",
     "pages/input/index",
     "pages/list/index",
+    "pages/map/index",
     "pages/modal/index",
     "pages/popup/index",
     "pages/white-space/index",

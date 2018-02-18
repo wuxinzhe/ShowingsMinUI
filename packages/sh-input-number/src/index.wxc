@@ -149,4 +149,9 @@ export default {
     font-size: 25px;
     color: #C0C4CC;
   }
+
+  form sh-form sh-input-number:first-child:before,
+  sh-form sh-input-number:first-child:before {
+    display: none;
+  }
 </style>

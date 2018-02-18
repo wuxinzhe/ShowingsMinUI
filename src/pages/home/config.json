@@ -25,6 +25,12 @@
           "code": ""
         },
         {
+          "id": "map",
+          "name": "地图选择",
+          "icon": "",
+          "code": ""
+        },
+        {
           "id": "date-picker",
           "name": "日期选择器",
           "icon": "",

@@ -3,6 +3,8 @@
     <sh-form formTitle="ShowingsForm">
       <sh-input label="用户名" placeholder="请输入用户名" name="username"></sh-input>
       <sh-date-picker label="日期" name="date"></sh-date-picker>
+      <sh-input-number label="数量" value="666" name="number"></sh-input-number>
+      <sh-map label="地图" iconPath="/location.png" name="map"></sh-map>
     </sh-form>
     <sh-white-space></sh-white-space>
     <sh-wing-blank>
@@ -19,7 +21,9 @@ export default {
             'sh-input': 'sh-input',
             'sh-date-picker': 'sh-date-picker',
             'sh-wing-blank': 'sh-wing-blank',
-            'sh-white-space': 'sh-white-space'
+            'sh-white-space': 'sh-white-space',
+            'sh-input-number': 'sh-input-number',
+            'sh-map': 'sh-map'
         }
     },
     data: {},

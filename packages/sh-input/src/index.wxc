@@ -117,4 +117,9 @@ export default {
     color: #C0C4CC;
   }
 
+  form sh-form sh-input:first-child:before,
+  sh-form sh-input:first-child:before {
+    display: none;
+  }
+
 </style>

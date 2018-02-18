@@ -1,0 +1,126 @@
+<template>
+  <label wx:if="{{label!==null}}" style="{{'width:'+labelWidth}}">
+    {{label}}
+  </label>
+  <map longitude="{{value.lng}}" markers="{{[markers]}}" latitude="{{value.lat}}" scale="{{scale}}" show-location
+       class="map-view" bindtap="onTap"></map>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {}
+    },
+    behaviors: ['wx://form-field'],
+    properties: {
+        name: String,
+        value: {
+            type: Object,
+            value: {
+                lng: 113.324520,
+                lat: 23.099994
+            }
+        },
+        label: {
+            type: String,
+            value: null
+        },
+        labelWidth: {
+            type: String,
+            value: '120rpx'
+        },
+        markers: {
+            type: Object,
+            value: {
+                id: 1,
+                latitude: 23.099994,
+                longitude: 113.324520,
+                iconPath: '/location.png',
+                width: 30,
+                height: 30,
+                anchor: {x: 0.5, y: 1}
+            }
+        },
+        scale: {
+            type: Number,
+            value: 14
+        },
+        iconPath: String
+    },
+    data: {},
+    methods: {
+        onTap () {
+            let that = this
+            wx.chooseLocation({
+                success ({latitude, longitude}) {
+                    that.setData({
+                        value: {
+                            lng: longitude,
+                            lat: latitude
+                        },
+                        markers: {
+                            id: 1,
+                            latitude: latitude,
+                            longitude: longitude,
+                            iconPath: that.data.iconPath,
+                            width: 30,
+                            height: 30,
+                            anchor: {x: 0.5, y: 1}
+                        }
+                    })
+                    that.triggerEvent('onLocation', {
+                        lng: longitude,
+                        lat: latitude
+                    })
+                }
+            })
+        }
+    }
+}
+
+
+</script>
+
+<style>
+  sh-map {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+
+  sh-map:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    left: 30px;
+  }
+
+  sh-map label {
+    margin-right: 25px;
+    font-size: 25px;
+    text-align: right;
+    align-self: flex-start;
+  }
+
+  form sh-form sh-map:first-child:before,
+  sh-form sh-map:first-child:before {
+    display: none;
+  }
+
+  .map-view {
+    flex-grow: 1;
+    height: 300px;
+  }
+</style>

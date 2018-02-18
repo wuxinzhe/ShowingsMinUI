@@ -1,0 +1,27 @@
+<template>
+  <form bindsubmit="onSubmit">
+    <sh-form formTitle="Map">
+      <sh-map label="地图选择" iconPath="/location.png"></sh-map>
+    </sh-form>
+  </form>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {
+            'sh-map': 'sh-map',
+            'sh-form': 'sh-form'
+        }
+    },
+    data: {},
+    methods: {
+        onSubmit (e) {
+            console.log(e)
+        }
+    }
+}
+</script>
+
+<style>
+</style>

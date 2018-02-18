@@ -54,7 +54,7 @@ export default {
         name: String,
         value: {
             type: Array,
-            value: [date.getFullYear(), date.getMonth() + 1, date.getDay()]
+            value: [date.getFullYear(), date.getMonth() + 1, date.getDate()]
         },
         label: {
             type: String,
@@ -73,7 +73,7 @@ export default {
         year: date.getFullYear(),
         month: date.getMonth() + 1,
         day: date.getDay(),
-        dateArray: [years.indexOf(date.getFullYear()), date.getMonth(), days.indexOf(date.getDay())]
+        dateArray: [years.indexOf(date.getFullYear()), date.getMonth(), days.indexOf(date.getDate())]
     },
     methods: {
         onOpenModal () {
@@ -82,6 +82,7 @@ export default {
             })
         },
         bindChange: function ({detail}) {
+            console.log(1)
             const {value} = detail
             let temp = new Date(this.data.years[value[0]], this.data.months[value[1]])
             temp.setDate(0)
@@ -159,6 +160,11 @@ export default {
 
   .date-view text {
     margin-right: 15px;
+  }
+
+  form sh-form sh-date-picker:first-child:before,
+  sh-form sh-date-picker:first-child:before {
+    display: none;
   }
 
 </style>
