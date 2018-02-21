@@ -20,12 +20,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
 					"name": "分割线",
-					"pathName": "pages/divider/index"
+					"pathName": "pages/divider/index",
+					"query": ""
 				}
 			]
 		}

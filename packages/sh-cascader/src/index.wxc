@@ -114,6 +114,9 @@ export default {
                 value.push({id: id, label: label})
                 temp = children
             }
+            if(value.length<=0){
+                value.push({id: -1, label: '请选择', children: []})
+            }
             this.setData({
                 value: value
             })
