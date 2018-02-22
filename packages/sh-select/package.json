@@ -1,6 +1,6 @@
 {
   "name": "@showings-min/sh-select",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "选择器 - 小程序组件",
   "publishConfig": {
     "access": "public"

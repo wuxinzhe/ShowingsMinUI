@@ -1,6 +1,6 @@
 {
   "name": "@showings-min/sh-cascader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "级联选择器 - 小程序组件",
   "publishConfig": {
     "access": "public"
