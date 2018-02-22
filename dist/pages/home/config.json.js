@@ -7,12 +7,6 @@ module.exports = {
       "icon": "https://s10.mogucdn.com/mlcdn/c45406/171122_7al50lach13ji6jggj63d17h522dh_200x200.png",
       "pages": [
         {
-          "id": "select",
-          "name": "选择器",
-          "icon": "",
-          "code": ""
-        },
-        {
           "id": "form",
           "name": "表单",
           "icon": "",
@@ -21,6 +15,12 @@ module.exports = {
         {
           "id": "input",
           "name": "文本输入",
+          "icon": "",
+          "code": ""
+        },
+        {
+          "id": "select",
+          "name": "选择器",
           "icon": "",
           "code": ""
         },

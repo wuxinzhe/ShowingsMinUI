@@ -4,8 +4,8 @@
       <sh-input label="用户名" placeholder="请输入用户名" name="username"></sh-input>
       <sh-date-picker label="日期" name="date"></sh-date-picker>
       <sh-input-number label="数量" value="666" name="number"></sh-input-number>
-      <sh-map label="地图" iconPath="/location.png" name="map"></sh-map>
-      <sh-cascader label="级联选择" name="cascader" title="级联选择" options="{{options}}" value="{{value}}"></sh-cascader>
+      <sh-select label="单选择器" name="select" modal-title="请选择" options="{{select}}"></sh-select>
+      <sh-cascader label="级联选择" name="cascader" title="级联选择" options="{{cascader}}" value="{{value}}"></sh-cascader>
     </sh-form>
     <sh-white-space></sh-white-space>
     <sh-wing-blank>
@@ -24,12 +24,20 @@ export default {
             'sh-wing-blank': 'sh-wing-blank',
             'sh-white-space': 'sh-white-space',
             'sh-input-number': 'sh-input-number',
-            'sh-map': 'sh-map',
+            'sh-select': 'sh-select',
             'sh-cascader': 'sh-cascader'
         }
     },
     data: {
-        options: [
+        select: [
+            {
+                id: 0,
+                label: '蛋糕'
+            }, {
+                id: 1,
+                label: '苹果'
+            }],
+        cascader: [
             {
                 id: 1,
                 label: '福建省',
