@@ -1,0 +1,43 @@
+<template>
+  <form bindsubmit="onSubmit">
+    <sh-form formTitle="Select">
+      <sh-select label="选择器" name="select" modal-title="请选择" options="{{options}}"></sh-select>
+    </sh-form>
+    <sh-white-space></sh-white-space>
+    <sh-wing-blank>
+      <button type="primary" form-type="submit">提交</button>
+    </sh-wing-blank>
+  </form>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {
+            'sh-select': 'sh-select',
+            'sh-form': 'sh-form',
+            'sh-wing-blank': 'sh-wing-blank',
+            'sh-white-space': 'sh-white-space'
+        }
+    },
+    data: {
+        options: [
+            {
+                id: 0,
+                label: '蛋糕'
+            }, {
+                id: 1,
+                label: '苹果'
+            }]
+    },
+    methods: {
+        onSubmit ({detail}) {
+            const {value} = detail
+            console.log(value)
+        }
+    }
+}
+</script>
+
+<style>
+</style>

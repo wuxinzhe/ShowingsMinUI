@@ -1,7 +1,7 @@
 <template>
   <form bindsubmit="onSubmit">
     <sh-form formTitle="Cascader">
-      <sh-cascader label="级联选择" name="cascader" modal-title="级联选择" options="{{options}}"></sh-cascader>
+      <sh-cascader label="级联选择" name="cascader" modal-title="级联选择" options="{{options}}" value="{{value}}"></sh-cascader>
     </sh-form>
     <sh-white-space></sh-white-space>
     <sh-wing-blank>

@@ -1,8 +1,12 @@
 <template>
   <example title="sh-cascader" desc="级联选择器">
 
-    <example-demo title="基础用法" desc="请填写示例描述">
+    <example-demo title="基础用法" desc="">
       <demo-default></demo-default>
+    </example-demo>
+
+    <example-demo title="预设值" desc="预先设置选项">
+      <demo-value></demo-value>
     </example-demo>
 
   </example>
@@ -15,7 +19,8 @@ export default {
             'example': '@minui/wxc-example',
             'example-demo': '@minui/wxc-example-demo',
             'example-md': '@minui/wxc-example-md',
-            'demo-default': './demos/demo-default'
+            'demo-default': './demos/demo-default',
+            'demo-value': './demos/demo-value'
         }
     },
     data: {}

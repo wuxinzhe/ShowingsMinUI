@@ -11,6 +11,7 @@
     "pages/map/index",
     "pages/modal/index",
     "pages/popup/index",
+    "pages/select/index",
     "pages/white-space/index",
     "pages/wing-blank/index"
   ],

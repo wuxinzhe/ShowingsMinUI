@@ -5,7 +5,7 @@
   <view bindtap="onOpenModal" class="data-view">
     <text wx:for="{{value}}" wx:key="{{item.id}}">{{item.label}}</text>
   </view>
-  <sh-modal title="{{title}}" visible="{{modalVisible}}" bind:onConfirm="setDateValue">
+  <sh-modal title="{{modalTitle}}" visible="{{modalVisible}}" bind:onConfirm="setDateValue">
     <view slot="modal-body">
       <picker-view indicator-style="height: 50rpx;" class="picker-view" value="{{selectArray}}"
                    bindchange="onChange">
@@ -31,7 +31,7 @@ export default {
             type: Array,
             value: [
                 {
-                    id: 0,
+                    id: -1,
                     label: '请选择'
                 }
             ]
@@ -44,7 +44,7 @@ export default {
             type: String,
             value: '120rpx'
         },
-        title: {
+        modalTitle: {
             type: String,
             value: null
         },
@@ -71,7 +71,6 @@ export default {
             this.setData({
                 modalVisible: true,
                 pickerColumnArray: [temp],
-                selectArray: [0]
             })
         },
         onChange ({detail}) {
@@ -114,7 +113,7 @@ export default {
                 value.push({id: id, label: label})
                 temp = children
             }
-            if(value.length<=0){
+            if (value.length <= 0) {
                 value.push({id: -1, label: '请选择', children: []})
             }
             this.setData({

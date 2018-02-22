@@ -1,0 +1,144 @@
+<template>
+  <label wx:if="{{label!==null}}" style="{{'width:'+labelWidth}}">
+    {{label}}
+  </label>
+  <view bindtap="onOpenModal" class="data-view">
+    <text>{{value.label}}</text>
+  </view>
+  <sh-modal title="{{modalTitle}}" visible="{{modalVisible}}" bind:onConfirm="setDateValue">
+    <view slot="modal-body">
+      <picker-view indicator-style="height: 50rpx;" class="picker-view" value="{{selectArray}}"
+                   bindchange="onChange">
+        <picker-view-column>
+          <view wx:for="{{pickerColumnArray}}" class="picker-view-column" wx:key="{{item.id}}">{{item.label}}</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+  </sh-modal>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {
+            'sh-modal': '@showings-min/sh-modal'
+        }
+    },
+    behaviors: ['wx://form-field'],
+    properties: {
+        name: String,
+        value: {
+            type: Object,
+            value: {
+                id: -1,
+                label: '请选择'
+            }
+        },
+        label: {
+            type: String,
+            value: null
+        },
+        labelWidth: {
+            type: String,
+            value: '120rpx'
+        },
+        options: {
+            type: Array,
+            value: []
+        },
+        modalTitle: String
+    },
+    data: {
+        modalVisible: false,
+        pickerColumnArray: [],
+        selectArray: [0]
+    },
+    methods: {
+        onOpenModal () {
+            let temp = this.data.options.concat()
+            temp.splice(0, 0, {id: -1, label: '请选择'})
+            let selectIdx = 0
+            this.data.options.forEach((item, idx) => {
+                if (item.id === this.data.value.id) {
+                    selectIdx = idx
+                }
+            })
+            this.setData({
+                pickerColumnArray: temp,
+                modalVisible: true
+            })
+        },
+        onChange ({detail}) {
+            const {value} = detail
+            this.setData({
+                selectArray: value
+            })
+        },
+        setDateValue () {
+            let temp = this.data.options.concat()
+            temp.splice(0, 0, {id: -1, label: '请选择'})
+            this.setData({
+                value: temp[this.data.selectArray[0]]
+            })
+        }
+    }
+}
+
+
+</script>
+
+<style>
+  sh-select {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+
+  sh-select:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    left: 30px;
+  }
+
+  sh-select label {
+    margin-right: 25px;
+    font-size: 25px;
+    text-align: right;
+  }
+
+  .picker-view {
+    width: 100%;
+    height: 300px;
+  }
+
+  .picker-view-column {
+    line-height: 60px;
+  }
+
+  .data-view {
+    font-size: 25px;
+    flex-grow: 1;
+  }
+
+  .data-view text {
+    margin-right: 15px;
+  }
+
+  form sh-form sh-select:first-child:before,
+  sh-form sh-select:first-child:before {
+    display: none;
+  }
+</style>
