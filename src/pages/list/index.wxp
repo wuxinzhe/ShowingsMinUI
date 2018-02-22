@@ -1,7 +1,7 @@
 <template>
   <example title="sh-list" desc="列表">
 
-    <example-demo title="请填写示例名称" desc="请填写示例描述">
+    <example-demo title="尚未完成" desc="">
       <demo-default></demo-default>
     </example-demo>
 
