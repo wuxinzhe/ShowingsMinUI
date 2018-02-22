@@ -80,6 +80,7 @@ export default {
             this.setData({
                 value: temp[this.data.selectArray[0]]
             })
+            this.triggerEvent('onConfirm', {value: this.data.value})
         }
     }
 }
