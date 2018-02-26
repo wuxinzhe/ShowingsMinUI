@@ -4,37 +4,6 @@
 	"libVersion": "1.9.91",
 	"appid": "wx89312b50af6551c3",
 	"projectname": "ShowingsMinUI",
-	"setting": {
-		"newFeature": true
-	},
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"list": []
-		},
-		"miniprogram": {
-			"current": -1,
-			"list": [
-				{
-					"id": -1,
-					"name": "分割线",
-					"pathName": "pages/divider/index",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "Select",
-					"pathName": "pages/select/index",
-					"query": ""
-				}
-			]
-		}
-	}
+	"setting": {},
+	"condition": {}
 }

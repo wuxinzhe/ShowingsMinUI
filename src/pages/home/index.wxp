@@ -21,14 +21,21 @@
 import { menus } from './config.json'
 
 export default {
-  config: {
-    usingComponents: {
-      'wxc-example-menu': '@minui/wxc-example-menu'
+    config: {
+        usingComponents: {
+            'wxc-example-menu': '@minui/wxc-example-menu'
+        }
+    },
+    data: {
+        menus
+    },
+    onShareAppMessage () {
+        return {
+            title: "Showings Min UI组件库",
+            path: '/pages/index/index',
+            imageUrl: './logo.png'
+        }
     }
-  },
-  data: {
-    menus
-  }
 }
 </script>
 

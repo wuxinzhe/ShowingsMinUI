@@ -1,6 +1,6 @@
 <example title="sh-list" desc="列表" _pid="{{_pid}}">
 
-    <example-demo title="请填写示例名称" desc="请填写示例描述" _pid="{{_pid}}" source="{{__code__.demoDefault}}">
+    <example-demo title="尚未完成" desc="" _pid="{{_pid}}" source="{{__code__.demoDefault}}">
         <demo-default _pid="{{_pid}}"></demo-default>
     </example-demo>
 
