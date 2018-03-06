@@ -99,6 +99,12 @@ module.exports = {
           "name": "弹出层",
           "icon": "",
           "code": ""
+        },
+        {
+          "id": "loading",
+          "name": "加载",
+          "icon": "",
+          "code": ""
         }
       ]
     }

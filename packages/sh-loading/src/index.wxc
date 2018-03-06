@@ -1,0 +1,57 @@
+<template>
+  <view class="sh-loading">
+    <view class="loading"></view>
+    <view class="loading-text">{{title}}</view>
+  </view>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {}
+    },
+    properties: {
+        title: {
+            type: String,
+            value: '加载中...'
+        }
+    }
+}
+
+
+</script>
+
+<style>
+  .sh-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .loading {
+    height: 70px;
+    width: 70px;
+    border: 8px solid #409EFF;
+    border-right-color: #44fff0;
+    border-bottom-color: #44e6ff;
+    border-left-color: #3fc5ff;
+    border-radius: 50%;
+    animation: loading 1s infinite linear;
+  }
+
+  .loading-text {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #C0C4CC;
+  }
+
+  @keyframes loading {
+    to {
+      transform: rotate(360deg);
+    }
+    from {
+      transform: rotate(0);
+    }
+  }
+</style>

@@ -1,0 +1,30 @@
+<template>
+  <example title="sh-loading" desc="加载">
+
+    <example-demo title="基础用法">
+      <demo-default></demo-default>
+    </example-demo>
+    <example-demo title="自定义标题" desc="可以定义标题内容">
+      <demo-title></demo-title>
+    </example-demo>
+
+  </example>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {
+            'example': '@minui/wxc-example',
+            'example-demo': '@minui/wxc-example-demo',
+            'example-md': '@minui/wxc-example-md',
+            'demo-default': './demos/demo-default',
+            'demo-title': './demos/demo-title'
+        }
+    },
+    data: {}
+}
+</script>
+
+<style>
+</style>

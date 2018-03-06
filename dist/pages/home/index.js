@@ -17,7 +17,7 @@ exports.default = Page({
     onShareAppMessage: function onShareAppMessage() {
         return {
             title: "Showings Min UI组件库",
-            path: '/pages/home/index',
+            path: '/pages/index/index',
             imageUrl: './logo.png'
         };
     }

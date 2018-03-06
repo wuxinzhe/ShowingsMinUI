@@ -1,0 +1,24 @@
+<template>
+  <View class="container">
+    <sh-loading title="读取中..."></sh-loading>
+  </View>
+</template>
+
+<script>
+export default {
+    config: {
+        usingComponents: {
+            'sh-loading': 'sh-loading'
+        }
+    },
+    data: {},
+    methods: {}
+}
+</script>
+
+<style>
+  .container {
+    position: relative;
+    height: 200px;
+  }
+</style>

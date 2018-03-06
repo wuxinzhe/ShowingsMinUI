@@ -1,0 +1,19 @@
+{
+  "name": "sh-loading",
+  "version": "1.0.0",
+  "description": "读取 - 小程序组件",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuxinzhe/ShowingsMinUI/tree/master/packages/sh-loading"
+  },
+  "author": "",
+  "license": "MIT",
+  "minConfig": {
+    "component": true
+  }
+}
