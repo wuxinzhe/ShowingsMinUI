@@ -3,24 +3,25 @@
 </template>
 
 <script>
+
 export default {
-  config: {
-    pages: [],
-    window: {
-      backgroundTextStyle: 'dark',
-      backgroundColor: '#efefef',
-      navigationBarBackgroundColor: '#ffffff',
-      navigationBarTitleText: 'ShowingsMinUI',
-      navigationBarTextStyle: 'black'
+    config: {
+        pages: [],
+        window: {
+            backgroundTextStyle: 'dark',
+            backgroundColor: '#efefef',
+            navigationBarBackgroundColor: '#ffffff',
+            navigationBarTitleText: 'ShowingsMinUI',
+            navigationBarTextStyle: 'black'
+        },
+        networkTimeout: {
+            request: 10000
+        }
     },
-    networkTimeout: {
-      request: 10000
-    }
-  },
-  globalData: {},
-  onLaunch () { },
-  onShow () { },
-  onHide () { }
+    globalData: {},
+    onLaunch () { },
+    onShow () { },
+    onHide () { }
 }
 </script>
 
