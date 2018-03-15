@@ -1,12 +1,12 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.default = App({
-  globalData: {},
-  onLaunch: function onLaunch() { },
-  onShow: function onShow() { },
-  onHide: function onHide() { }
+    globalData: {},
+    onLaunch: function onLaunch() {},
+    onShow: function onShow() {},
+    onHide: function onHide() {}
 });
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC53eGEiXSwibmFtZXMiOlsiZ2xvYmFsRGF0YSIsIm9uTGF1bmNoIiwib25TaG93Iiwib25IaWRlIl0sIm1hcHBpbmdzIjoiOzs7Ozs7QUFjSUEsZ0JBQVksRTtBQUNaQyxZLHNCQUFZLENBQUcsQztBQUNmQyxVLG9CQUFVLENBQUcsQztBQUNiQyxVLG9CQUFVLENBQUciLCJmaWxlIjoiYXBwLnd4YSIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IHtcbiAgICBjb25maWc6IHtcbiAgICAgICAgcGFnZXM6IFtdLFxuICAgICAgICB3aW5kb3c6IHtcbiAgICAgICAgICAgIGJhY2tncm91bmRUZXh0U3R5bGU6ICdkYXJrJyxcbiAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogJyNlZmVmZWYnLFxuICAgICAgICAgICAgbmF2aWdhdGlvbkJhckJhY2tncm91bmRDb2xvcjogJyNmZmZmZmYnLFxuICAgICAgICAgICAgbmF2aWdhdGlvbkJhclRpdGxlVGV4dDogJ1Nob3dpbmdzTWluVUknLFxuICAgICAgICAgICAgbmF2aWdhdGlvbkJhclRleHRTdHlsZTogJ2JsYWNrJ1xuICAgICAgICB9LFxuICAgICAgICBuZXR3b3JrVGltZW91dDoge1xuICAgICAgICAgICAgcmVxdWVzdDogMTAwMDBcbiAgICAgICAgfVxuICAgIH0sXG4gICAgZ2xvYmFsRGF0YToge30sXG4gICAgb25MYXVuY2ggKCkgeyB9LFxuICAgIG9uU2hvdyAoKSB7IH0sXG4gICAgb25IaWRlICgpIHsgfVxufSJdfQ==

@@ -1,7 +1,7 @@
 <template>
   <view class="sh-form">
     <view class="form-title" wx:if="{{formTitle !== null}}">{{formTitle}}</view>
-    <view class="form-title" wx:if="{{formTitle === null}}">
+    <view class="form-title" wx:else>
       <slot name="form-title"/>
     </view>
     <view class="form-body">
